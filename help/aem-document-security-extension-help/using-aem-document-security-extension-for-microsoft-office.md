@@ -1,19 +1,19 @@
 ---
-title: AEM Document Security Extension for Microsoft Office を使用する
-description: AEM Document Security Extension for Microsoft Office を使用する
+title: AEM Document Security Extension for Microsoft Office の使用
+description: AEM Document Security Extension for Microsoft Office の使用
 uuid: 8d98a355-df25-4d8e-ae76-a63a93f280c4
 contentOwner: dhv
 discoiquuid: df6ca960-ccfb-411a-b61d-d52bce0725a7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 078b8815a52917f20fd8bdad4f0a1da756a66684
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '120'
 ht-degree: 100%
 
 ---
 
 
-# AEM Document Security Extension for Microsoft Office を使用する{#using-aem-document-security-extension-for-microsoft-office}
+# AEM Document Security Extension for Microsoft Office の使用 {#using-aem-document-security-extension-for-microsoft-office}
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->[AEM Document Security Extension for Microsoft Office を使用する](../using-aem-document-security-extension.md) {#using-aem-document-security-extension-for-microsoft-office}
+>[AEM Document Security Extension for Microsoft Office の使用](../using-aem-document-security-extension.md) {#using-aem-document-security-extension-for-microsoft-office}
 >
 >広範囲にファイルを配布する場合でも、ポリシーで保護されたファイルを受信者が使用する方法を制御できます。この文書では、ファイルの保護方法および保護ファイルの使用方法について説明します。
 
