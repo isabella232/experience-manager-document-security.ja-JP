@@ -4,33 +4,33 @@ description: Document Security Extension for Microsoft Office ソフトウェア
 uuid: b4c7d1d1-7eae-4fd3-8282-132c80a976e8
 contentOwner: khsingh
 discoiquuid: b32c7bb8-0060-4c2a-90fc-446b6ba39159
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 19de0b62ac493c7507581abb607b008c64f77597
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '204'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
 
 # Adobe Experience Manager Document Security／LiveCycle Rights Management Extension for Microsoft Office のダウンロード {#download-adobe-experience-manager-document-security-livecycle-rights-management-extension-for-microsoft-office}
 
-ドキュメントセキュリティ拡張機能（Microsoft Officeソフトウェア）を使用すると、ファイルの配布方法や保存場所に関係なく、ドキュメントの作成から配布、アーカイブ、破棄まで、重要なファイルを常に不正アクセスから保護し、機密性の高い情報の機密性を維持できます。
+Document Security Extension for Microsoft Office ソフトウェアは、重要なファイルへの不正アクセスを常に防止することにより、機密情報の機密性を保持します。ファイルの配布方法や保存場所を問わず、ドキュメントの作成から配布、アーカイブ、破棄に至るまで、情報を継続的に保護します。
 
 >[!NOTE]
 >
->この拡張機能は、AEM 6.0Forms以降向けのLiveCycle Rights Management ES2以降およびドキュメントセキュリティアドオンの両方をサポートしています。
+>この拡張機能は、LiveCycle Rights Management ES2 以降および AEM 6.0 Forms 以降の Document Security アドオンの両方をサポートしています。
 
-## システム要件 {#system-requirements}
+## 必要システム構成 {#system-requirements}
 
 * 32 ビット版または 64 ビット版の Microsoft Windows 7 または Windows 10
-* 注：Document Security Extension for Microsoft Office も Microsoft Surface シリーズのデバイスで動作すると想定されています。
-* Office 365の一部としてインストールされたMicrosoft Office 2013、2016、2019、またはMicrosoft Officeデスクトップアプリケーションの32ビット版または64ビット版
+* 注：Document Security Extension for Microsoft Office は Microsoft Surface シリーズのデバイスでも動作すると想定されます。
+* 32 ビット版または 64 ビット版の Microsoft Office 2013、2016、2019 のほか、Office 365 の一部としてインストールされた Microsoft Office デスクトップアプリケーション
 * 1.3 GHz 以上のプロセッサー
 * 2 GB の RAM
 * 100 MB のハードディスク容量
 
-## インストーラーをダウンロードする {#download-installer}
+## インストーラーのダウンロード {#download-installer}
 
 | Microsoft Office 32 ビット版 | [EXE をダウンロードする](http://download.macromedia.com/pub/livecycle/policyserver/DocumentSecurityExtensionforMicrosoftOffice.exe) | [MSI をダウンロードする](http://download.macromedia.com/pub/livecycle/policyserver/DocumentSecurityExtensionforMicrosoftOffice.zip) |
 |---|---|---|
