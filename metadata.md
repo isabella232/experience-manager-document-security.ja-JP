@@ -1,18 +1,13 @@
 ---
 cloud: experience-cloud
-solution-title: ラーニングとサポート
-solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ja
-getting-started-title: 概要
-getting-started-url: https://helpx.adobe.com/jp/experience-manager/get-started.html
-tutorials-title: チュートリアル
-tutorials-url: https://experienceleague.adobe.com/?tag=Tutorial&lang=ja#recommended/solutions/experience-manage
+feature-set: Experience Manager Forms
 mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-document-security.ja-JP
 index: true
-translation-type: ht
-source-git-commit: 29c078e0820b42b53eb65061893e45c8cb63e549
-workflow-type: ht
-source-wordcount: '150'
+translation-type: tm+mt
+source-git-commit: f441620b5463ffa0c038f76e1b92c4e3a56d23b2
+workflow-type: tm+mt
+source-wordcount: '130'
 ht-degree: 100%
 
 ---
