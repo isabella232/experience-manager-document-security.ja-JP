@@ -5,14 +5,14 @@ uuid: a5428c50-fae3-4823-9e6f-0f5306e7248f
 content-type: reference
 topic-tags: using
 discoiquuid: cf93f9f5-1fb6-4909-815e-0ffb8c6ea6d1
+exl-id: 3e07c031-3f88-4bde-bdb3-b136ef5f9527
 translation-type: ht
-source-git-commit: 19de0b62ac493c7507581abb607b008c64f77597
+source-git-commit: a15d49cdd21ccb8e6ec6c770a92bf16cb24ffaa1
 workflow-type: ht
 source-wordcount: '1304'
 ht-degree: 100%
 
 ---
-
 
 # AEM Document Security Extension for Microsoft Office の紹介 {#introduction-to-aem-document-security-extension-for-microsoft-office}
 
@@ -22,7 +22,7 @@ Document Security Extension for Microsoft Office は LiveCycle Rights Management
 
 ## Document Security による知的財産の保護の仕組み {#how-document-security-protects-intellectual-property}
 
-Document Security により、許可されたユーザーだけが、知的財産を含んだファイルを使用できるようになります。Document Security を利用すると、機密ポリシーを使用してファイルを保護できます。*ポリシー*&#x200B;は、機密設定および許可されたユーザーの一覧を含む情報の集合です。ポリシーを適用したファイルを受信者がどのように使用できるかは、ポリシーで指定した設定で決まります。例えば、受信者がテキストの印刷やコピー、変更内容の保存をおこなえるかどうかを指定できます。
+Document Security により、許可されたユーザーだけが、知的財産を含んだファイルを使用できるようになります。Document Security を利用すると、機密ポリシーを使用してファイルを保護できます。*ポリシー*&#x200B;は、機密設定および許可されたユーザーの一覧を含む情報の集合です。ポリシーを適用したファイルを受信者がどのように使用できるかは、ポリシーで指定した設定で決まります。例えば、受信者がテキストの印刷やコピー、変更内容の保存を行えるかどうかを指定できます。
 
 ポリシーを作成するのは Document Security 管理者およびユーザーです。管理者は、許可されたすべてのユーザーが使用できる組織ポリシーを作成します。管理者またはポリシー設定コーディネータは、ユーザーのサブセットで使用できる&#x200B;*ポリシーセット*&#x200B;と呼ばれるポリシーグループを作成することもできます。ユーザーは自分だけが使える独自のポリシーを作成できます。管理者、ポリシー設定コーディネータ、ユーザーは、Document Security Web ページを使用してポリシーを作成します。
 
@@ -46,7 +46,7 @@ Document Security により、許可されたユーザーだけが、知的財�
 
 ポリシーで保護された Word、Excel および PowerPoint ファイルを開き、使用できるようにするには、該当するユーザーが受信者としてポリシーに含まれているか、匿名アクセスが許可されていて、Document Security Extension for Microsoft Office がインストールされている必要があります。Document Security Extension for Microsoft Office ソフトウェアを持っていないユーザーに、ポリシーで保護されたファイルを渡す場合は、ソフトウェアのコピーを渡すか、Web サイトからソフトウェアをダウンロードする方法を教えてください。インストーラーがない場合は、[ダウンロードページ](https://www.adobe.com/jp/products/livecycle/rightsmanagement/extension/downloads.html)からダウンロードできます。
 
-ポリシーで保護されたファイルをユーザーが開こうとすると、Document Security Extension for Microsoft Office が Document Security に接続して、ユーザーの認証をおこないます。ファイルの使用状況を監査するように Document Security が設定されている場合は、ファイルの使用状況が監査中であることを示す通知が表示されます。ユーザーに付与されるファイル権限は Document Security によって決定され、ユーザーは、次の条件の下でポリシー設定に従ってファイルを使用できます。
+ポリシーで保護されたファイルをユーザーが開こうとすると、Document Security Extension for Microsoft Office が Document Security に接続して、ユーザーの認証を行います。ファイルの使用状況を監査するように Document Security が設定されている場合は、ファイルの使用状況が監査中であることを示す通知が表示されます。ユーザーに付与されるファイル権限は Document Security によって決定され、ユーザーは、次の条件の下でポリシー設定に従ってファイルを使用できます。
 
 * ポリシーで指定された有効期間内。
 * 管理者またはポリシーの適用者がファイルへのアクセスを無効にするか、ポリシーを変更するまで。
@@ -79,7 +79,7 @@ Document Security により、許可されたユーザーだけが、知的財�
   </tr>
   <tr>
    <td><p>AEM Forms 管理者ヘルプ</p> </td>
-   <td><p><a href="http://www.adobe.com/go/learn_aemforms_admin_65_jp">『管理ヘルプ』</a>または Document Security 管理ページで、ページの右上にある「ヘルプ」リンクをクリックしてください。</p> </td>
+   <td><p><a href="http://www.adobe.com/go/learn_aemforms_admin_65_jp">管理ヘルプ</a>または Document Security 管理ページで、ページの右上にある「ヘルプ」リンクをクリックしてください。</p> </td>
   </tr>
   <tr>
    <td><p>現在のバージョンに関するパッチアップデート、テクニカルノート、および追加情報</p> </td>
@@ -87,4 +87,3 @@ Document Security により、許可されたユーザーだけが、知的財�
   </tr>
  </tbody>
 </table>
-
