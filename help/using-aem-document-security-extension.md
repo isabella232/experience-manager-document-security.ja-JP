@@ -5,14 +5,14 @@ uuid: db4abbc8-eb21-4f4a-9950-224ada95ce66
 content-type: reference
 topic-tags: using
 discoiquuid: f4c2460c-174f-4e4d-b804-1eb051d2781e
+exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
 translation-type: ht
-source-git-commit: 21288f7f1c8f786d3c4c363986226038bdb03e26
+source-git-commit: a15d49cdd21ccb8e6ec6c770a92bf16cb24ffaa1
 workflow-type: ht
 source-wordcount: '6270'
 ht-degree: 100%
 
 ---
-
 
 # AEM Document Security Extension for Microsoft Office の使用 {#using-aem-document-security-extension-for-microsoft-office}
 
@@ -58,8 +58,8 @@ Document Security サーバーで証明書ベースの認証が使用される�
 1. 「**名前**」ボックスに接続の名前を入力します。任意の名前を使用できます。
 1. 「**サーバーのアドレス**」ボックスにサーバーのアドレスを入力します。
 1. 「**ポート**」ボックスにサーバーポートを入力します。
-1. （オプション）ユーザー名とパスワードを記憶する場合は、「**このコンピュータにパスワードを保存**」を選択し、該当するボックスにユーザー名とパスワードを入力します。他のユーザーがこのコンピューターにアクセスする可能性がある場合は、このオプションを選択しないことをお勧めします。
-1. 「**このサーバーに接続**」をクリックします。Document Security Extension for Microsoft Office は、指定されたサーバーへの接続を試みます。指定した認証タイプに応じて、次のいずれかの操作をおこないます。
+1. （オプション）ユーザー名とパスワードを記憶する場合は、「**このコンピューターにパスワードを保存**」を選択し、該当するボックスにユーザー名とパスワードを入力します。他のユーザーがこのコンピューターにアクセスする可能性がある場合は、このオプションを選択しないことをお勧めします。
+1. 「**このサーバーに接続**」をクリックします。Document Security Extension for Microsoft Office は、指定されたサーバーへの接続を試みます。指定した認証タイプに応じて、次のいずれかの操作を行います。
 
    **ユーザー名とパスワード**
 
@@ -122,7 +122,7 @@ AEM Forms のデフォルト URL を使用して拡張認証を実行できま�
 
 カスタム URL を使用した拡張認証を実行できます。これにより、カスタム認証ページにカスタムブランド（組織のブランドなど）を表示できます。
 
-カスタム認証ページを war ファイルにパッケージ化し、その war ファイルを AEM Forms サーバーにデプロイできます。war ファイルにはユーザー資格情報を受け付けて AEM Forms サーバーで認証をおこなうための完全なロジックが含まれています。AEM Forms Document Security のカスタム認証ページには次の要件があります。
+カスタム認証ページを war ファイルにパッケージ化し、その war ファイルを AEM Forms サーバーにデプロイできます。war ファイルにはユーザー資格情報を受け付けて AEM Forms サーバーで認証を行うための完全なロジックが含まれています。AEM Forms Document Security のカスタム認証ページには次の要件があります。
 
 * ユーザー名とパスワードはそれぞれ j_username 形式および j_password 形式で認証ページから送信される必要があります。また、source_url と login_url を非表示パラメータとして送信する必要もあります。
 * 認証に成功した場合、ページは自動的に閉じる必要があります。
@@ -139,7 +139,7 @@ AEM Forms のデフォルト URL を使用して拡張認証を実行できま�
    >
    >&lt;entry key=”sso-l” value=”/ sample_/login.jsp”/>!!discoiqbr!!&lt;entry key=”sso-s” value=”/ sample_/welcome.jsp”>!!discoiqbr!!&lt;entry key=”sso-o” value=”/ sample_/logout.jsp”/>!!discoiqbr!!
 
-   config.xml ファイルを更新する手順について詳しくは、「[Document Security 設定ファイルの手動による編集](https://helpx.adobe.com/aem-forms/6-3/admin-help/configuring-client-server-options.html#manually_editing_the_document_security_configuration_file)」を参照してください。
+   config.xml ファイルを更新する手順について詳しくは、「[Document Security 設定ファイルの手動による編集](https://helpx.adobe.com/jp/aem-forms/6-3/admin-help/configuring-client-server-options.html#manually_editing_the_document_security_configuration_file)」を参照してください。
 
    これで、カスタムランディングページ URL を使用して拡張認証を実行するように AEM Forms Document Security が設定されました。
 
@@ -164,7 +164,7 @@ AEM Forms サーバーに SAML プロバイダーが設定されている場合�
 
 AEM Forms サーバーに設定されているすべての認証プロバイダーが含まれたカスタムページを表示することもできます。このようなページを作成するには、次の手順を実行します。
 
-1. カスタム認証ページを war ファイルにパッケージ化し、その war ファイルを AEM Forms サーバーにデプロイします。war ファイルにはユーザー資格情報を受け付けて AEM Forms サーバーで認証をおこなうための完全なロジックが含まれています。
+1. カスタム認証ページを war ファイルにパッケージ化し、その war ファイルを AEM Forms サーバーにデプロイします。war ファイルにはユーザー資格情報を受け付けて AEM Forms サーバーで認証を行うための完全なロジックが含まれています。
 1. AEM Forms の管理 UI を開き、**[!UICONTROL 設定]**／**[!UICONTROL User Management]**／**[!UICONTROL 設定]**／**[!UICONTROL SAML サービスプロバイダーの設定]**&#x200B;に移動します。
 1. 次のプロパティを「Custom Properties」フィールドに追加し、「**[!UICONTROL 保存]**」をクリックします。
 
@@ -182,8 +182,7 @@ Document Security アカウントがない場合、次のイベントが発生�
 登録を済ませてアカウントをアクティベートすると、ポリシーによって使用が承認されていれば、ポリシーで保護されたファイルを使用できるようになります。
 
 >[!NOTE]
->
->ポリシーで保護されたファイルを受け取っても Document Security アカウントがない場合や、登録の招待を受けていない場合は、ファイルの送信者にお問い合わせください。
+ポリシーで保護されたファイルを受け取っても Document Security アカウントがない場合や、登録の招待を受けていない場合は、ファイルの送信者にお問い合わせください。
 
 Document Security から電子メールで登録の招待を受けた場合、その電子メールに記載された URL を使用してオンライン登録ページを開いて登録できます。登録後、アカウントのアクティベートに関する通知を受信します。
 
@@ -194,8 +193,7 @@ Document Security から電子メールで登録の招待を受けた場合、�
 1. 該当するボックスに、自分の名前、組織およびパスワードを入力します。パスワードには、任意の 8 文字のテキストを使用できます。
 
    >[!NOTE]
-   >
-   >覚えやすいパスワードを選んでください。パスワードを忘れた場合に確認する方法はありません。
+   覚えやすいパスワードを選んでください。パスワードを忘れた場合に確認する方法はありません。
 
 1. 「**登録**」をクリックします。メッセージが表示され、アクティベーション用の電子メールメッセージがユーザーに送信されたことが通知されます。
 1. Document Security 登録確認電子メールを開きます。
@@ -324,7 +322,7 @@ Document Security Web ページでポリシーの作成に使用できるポリ�
  </tbody>
 </table>
 
-ポリシーの作成と管理について詳しくは、「[Document Security エンドユーザーガイド](http://help.adobe.com/en_US/AEMForms/6.1/RMHelp/)」を参照してください。
+ポリシーの作成と管理について詳しくは、[Document Security エンドユーザーヘルプ](http://help.adobe.com/en_US/AEMForms/6.1/RMHelp/)を参照してください。
 
 ### ポリシーの適用 {#applying-policies}
 
@@ -333,8 +331,7 @@ Document Security Web ページでポリシーの作成に使用できるポリ�
 適用したポリシーは AEM Document Security メニューの「Recently Used」リストに追加されるため、頻繁に使用するポリシーを適用しやすくなります。Document Security の複数のインスタンスを使用する場合、「Recently Used」リストには、現在接続しているサーバーのポリシーのみが表示されます。または、Document Security のインスタンスにログインしていない場合はデフォルトサーバーのポリシーのみが表示されます。
 
 >[!NOTE]
->
->ポリシーを適用できるのは、Word ドキュメントファイル（.doc、Microsoft Office 2010 および 2013では .docx と .docm も）、Excel ワークブックファイル（.xls、Microsoft Office 2010 および 2013 では .xlsx と .xlsm も）および PowerPoint プレゼンテーションファイル（.ppt、Microsoft Office 2010 および 2013 では .pptx と .pptm も）のみです。Word テンプレートファイル（.dot）、Excel テンプレートファイル（.xlt）、PowerPoint デザインテンプレートファイル（.pot）にはポリシーを適用できません。
+ポリシーを適用できるのは、Word ドキュメントファイル（.doc、Microsoft Office 2010 および 2013では .docx と .docm も）、Excel ワークブックファイル（.xls、Microsoft Office 2010 および 2013 では .xlsx と .xlsm も）および PowerPoint プレゼンテーションファイル（.ppt、Microsoft Office 2010 および 2013 では .pptx と .pptm も）のみです。Word テンプレートファイル（.dot）、Excel テンプレートファイル（.xlt）、PowerPoint デザインテンプレートファイル（.pot）にはポリシーを適用できません。
 
 #### ポリシーの適用 {#apply-a-policy}
 
@@ -348,7 +345,7 @@ Document Security Web ページでポリシーの作成に使用できるポリ�
 #### 最近使用したポリシーの適用 {#apply-a-recently-used-policy}
 
 1. Document Security Extension for Microsoft Office 2010 および 2013 で、「**Document Security**」タブの保護／*[ポリシー名]*&#x200B;を選択します。
-1. ファイルを保存します。
+1.  ファイルを保存します。
 
 ## ポリシーで保護されたファイルの操作 {#usingaemdocumentsecurityextensionpolicyprotectedfiles}
 
@@ -365,8 +362,7 @@ Document Security Extension for Microsoft Office では、ファイルの発行�
 ポリシーで保護されたファイルで作業している場合、一部の製品機能が使用できないことや、通常どおり動作しないことがあります。また、保護されていないファイルを開く場合、ほとんどの機能は保護されていないファイルでも有効です。ただし、ポリシーで保護されたファイルに対してコピーまたは書き出しの権限を持っていない場合、そのファイルから内容を読み込んだり、コピーしたりすることはできません。
 
 >[!NOTE]
->
->Document Security Extension 対応の Office アプリケーションを使用する場合、Windows DEP 設定を無効にすることをお勧めします。また、Document Security Extension がインストールされ、McAfee VirusScan の On-Access Scan 機能が有効なコンピューターで Office アプリケーションをスムーズに起動するには、McAfee VirusScan Console の「Buffer Overflow Protection」オプションを無効にしてください。
+Document Security Extension 対応の Office アプリケーションを使用する場合、Windows DEP 設定を無効にすることをお勧めします。また、Document Security Extension がインストールされ、McAfee VirusScan の On-Access Scan 機能が有効なコンピューターで Office アプリケーションをスムーズに起動するには、McAfee VirusScan Console の「Buffer Overflow Protection」オプションを無効にしてください。
 
 使用できない機能がある場合、メニューのコマンド名とそれに関連するツールバーボタンは使用できなくなります。Document Security Extension for Microsoft Office では、コマンドまたはボタンにマウスポインターを移動すると、Document Security によってそのコマンドが使用できなくなったことを示すツールヒントが表示されます。
 
@@ -393,8 +389,7 @@ Document Security に実装されている認証方法によっては、保護�
    Document Security のログイン情報をまだ指定していない場合は、ユーザー名とパスワードの入力を求めるダイアログボックスが表示されます。
 
 >[!NOTE]
->
->自分で保護したファイルからポリシーを削除できない場合は、Document Security 管理者に問い合わせてください。
+自分で保護したファイルからポリシーを削除できない場合は、Document Security 管理者に問い合わせてください。
 
 ### セキュリティ設定の表示 {#viewing-security-settings}
 
@@ -413,8 +408,7 @@ Document Security Extension for Microsoft Office 2010 では、「Document Secur
 ポリシー自動適用機能が有効な場合は、Document Security サーバーにログインするように Document Security Extension for Microsoft Office から求められます。サーバーで認証を受けるには、ユーザー名とパスワードを指定する必要があります。正しいログイン資格情報を指定した場合は、ドキュメントは保存および保護されます。
 
 >[!NOTE]
->
->Document Security にログインできない場合は、ドキュメントが保存されるときと、保存されないときがあります。どちらになるかは、管理者がポリシー自動適用をどのように設定したかによって決まります。この状況でのドキュメントの処理方法については、管理者にお問い合わせください。
+Document Security にログインできない場合は、ドキュメントが保存されるときと、保存されないときがあります。どちらになるかは、管理者がポリシー自動適用をどのように設定したかによって決まります。この状況でのドキュメントの処理方法については、管理者にお問い合わせください。
 
 ### オフラインアクセスの同期 {#synchronizing-for-offline-access}
 
@@ -483,7 +477,7 @@ Document Security Extension for Microsoft Office では、次のような透か�
 
 Document Security Web ページを開いて、ユーザーポリシーを作成および更新したり、ポリシーで保護されたファイルに関するステータスや監査情報を表示したりできます。また、Document Security Web ページを使用して、ポリシーを変更したり、ポリシーで保護されたファイルに対するアクセスを無効にしたりできます。
 
-Document Security Web ページを開くには、Document Security Extension for Microsoft Office 2010 および 2013 で、「**Document Security**」タブの「**ポリシーを作成および管理**」を選択します。ログイン情報を指定していない場合は、ブラウザーが開き、サーバーログインページが表示されます。
+Document Security Web ページを開くには、Document Security Extension for Microsoft Office 2010 および 2013 で、「**Document Security**」タブの「**ポリシーを作成および管理**」を選択します。ログイン情報を指定していない場合、ブラウザーが開き、サーバーログインページが表示されます。
 
 ### ポリシーの変更 {#changing-policies}
 
@@ -552,13 +546,12 @@ Document Security Web ページのイベントページが開き、現在のフ�
 コマンドを使用できない場合、メニューのコマンド名や関連するツールバーボタンはグレー表示されます。
 
 >[!NOTE]
->
->埋め込みファイルへのリンクを含むファイルにポリシーを適用しても、リンク先のファイルにポリシーは適用されません。Document Security for Microsoft Office では、リンク先のファイルにまで保護が拡張されません。
+埋め込みファイルへのリンクを含むファイルにポリシーを適用しても、リンク先のファイルにポリシーは適用されません。Document Security for Microsoft Office では、リンク先のファイルにまで保護が拡張されません。
 
 * ポリシーで保護された Word、Excel、PowerPoint ファイルは、Internet Explorer ブラウザーウィンドウ内で開くことができません。
 * 変更権限のみを付与されたユーザーは、Windows のクリップボードを使用して、別のアプリケーションの内容をファイルにコピーできません。Microsoft Office クリップボードオプションを有効にすると、内容をファイルにコピーできます。
 * ポリシーで保護されたファイルを Microsoft Office で開くと、アプリケーションを閉じるか、セッションが期限切れになるまで、Print Screen キーは使用できなくなります。
-* Document Security for Microsoft Office では、WebDAV（Web-based Distributed Authoring and Versioning）をサポートしていません。ほとんどの場合、ポリシーで保護されたファイルを WebDAV フォルダーから開くことはできません。ポリシーで保護されたファイルを開くことができても、そのファイルの保存、印刷、変更、コピーをおこなう権限はありません。
+* Document Security for Microsoft Office では、WebDAV（Web-based Distributed Authoring and Versioning）をサポートしていません。ほとんどの場合、ポリシーで保護されたファイルを WebDAV フォルダーから開くことはできません。ポリシーで保護されたファイルを開くことができても、そのファイルの保存、印刷、変更、コピーを行う権限はありません。
 
 ポリシーで保護されたファイルに適用される一般的なセキュリティには、次の制限があります。
 
@@ -622,7 +615,7 @@ Document Security Web ページのイベントページが開き、現在のフ�
 
 **オンライングループ作業**：保護されたセッション中は使用できません。
 
-**グループ文書とサブ文書**：グループ文書内でサブ文書を開くと、サブ文書はグループ文書のポリシーで管理されます。サブ文書を個別に開くと、印刷、コピー、変更をおこなうことができません。
+**グループ文書とサブ文書**：グループ文書内でサブ文書を開くと、サブ文書はグループ文書のポリシーで管理されます。サブ文書を個別に開くと、印刷、コピー、変更を行うことができません。
 
 **要約の再作成**：保護されたセッション中は使用できません。
 
@@ -782,4 +775,4 @@ AEM Forms Document Security で、サードパーティ認証プロバイダー�
 
 ## 用語集 {#glossary}
 
-LiveCycle および AEM Forms on JEE で使用される用語については、「[用語集](http://www.adobe.com/go/learn_aemforms_designer_65)」を参照してください。
+LiveCycle および AEM Forms on JEE で使用される用語については、[用語集](http://www.adobe.com/go/learn_aemforms_designer_65)を参照してください。
