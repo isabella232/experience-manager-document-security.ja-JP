@@ -5,14 +5,14 @@ uuid: 9d7eb6bb-4780-4d82-8657-7c6c6d523af0
 content-type: reference
 topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
+exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
 translation-type: ht
-source-git-commit: ac385c538cdd7d3bb4772b92ee7a94b003595f56
+source-git-commit: a15d49cdd21ccb8e6ec6c770a92bf16cb24ffaa1
 workflow-type: ht
 source-wordcount: '2796'
 ht-degree: 100%
 
 ---
-
 
 # AEM Document Security Extension for Microsoft Office のインストールと設定 {#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
 
@@ -43,7 +43,7 @@ Document Security Extension for Microsoft Office をインストールする前�
 
 ### McAfee VirusScan の無効化 {#disable-mcafee-virusscan}
 
-Document Security Extension がインストールされ、McAfee VirusScan の On-Access Scan 機能が有効なコンピュータで Office アプリケーションをスムーズに起動するには、McAfee VirusScan Console の「Buffer Overflow Protection」オプションを無効にしてください。
+Document Security Extension がインストールされ、McAfee VirusScan の On-Access Scan 機能が有効なコンピューターで Office アプリケーションをスムーズに起動するには、McAfee VirusScan Console の「Buffer Overflow Protection」オプションを無効にしてください。
 
 ### サードパーティ製プラグインをアンインストールする {#uninstall-third-party-plug-ins}
 
@@ -267,7 +267,7 @@ Windows のレジストリ設定を変更することで、既存のヘッダー
 1. Windows レジストリを変更する前に、バックアップを作成してください。詳しい手順については、[Windows レジストリを変更する方法](https://support.microsoft.com/ja-jp/kb/136393)を参照してください。
 1. レジストリエディタで、HKEY_CURRENT_USER\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 または HKEY_LOCAL_MACHINE\WOW6432NODE\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 を開きます。
 1. 新しいレジストリキー **WatermarkMode** を作成します。
-1. WatermarkModeレジストリキーで、**WatermarkMode** の DWORD を作成し、**WatermarkMode** の DWORD 値を **1** に設定します。
+1. WatermarkModeレジストリキーで、**WatermarkMode** の DWORD を作成し、**WatermarkMode** の DWORD 値を「**1**」に設定します。
 
 1. レジストリエディターを終了します。
 
