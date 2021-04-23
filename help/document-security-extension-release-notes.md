@@ -5,14 +5,14 @@ uuid: f6ab73d4-ac4e-4fff-9bb8-917b75401653
 content-type: reference
 topic-tags: installing
 discoiquuid: c9342c28-8289-4831-a613-4bc03431f557
+exl-id: 582f10bb-60d2-46ed-b81d-5818a040edc6
 translation-type: ht
-source-git-commit: 403b800eab086d131beb65a496836158778954ee
+source-git-commit: a15d49cdd21ccb8e6ec6c770a92bf16cb24ffaa1
 workflow-type: ht
 source-wordcount: '1030'
 ht-degree: 100%
 
 ---
-
 
 # AEM Document Security for Microsoft Office - リリースノート {#aem-document-security-for-microsoft-office-release-notes}
 
@@ -93,7 +93,7 @@ Document Security Extension for Microsoft Office を使用するときは、Wind
 
 ### Document Security Extension for Microsoft Office および McAfee VirusScan がインストールされている PC 上で Office アプリケーションを起動する {#starting-office-applications-on-a-machine-containing-document-security-extension-for-microsoft-office-and-mcafee-virusscan}
 
-Document Security がインストールされ、McAfee VirusScan の On-Access Scan 機能が有効なコンピュータで Office アプリケーションをスムーズに起動するには、McAfee VirusScan Console の「Buffer Overflow Protection」オプションを無効にしてください。
+Document Security がインストールされ、McAfee VirusScan の On-Access Scan 機能が有効なコンピューターで Office アプリケーションをスムーズに起動するには、McAfee VirusScan Console の「Buffer Overflow Protection」オプションを無効にしてください。
 
 ### サポートされていない Microsoft Office 言語がインストールされている PC に Document Security Extension for Microsoft Office をインストールする {#installing-document-security-extension-for-microsoft-office-on-a-machine-with-an-unsupported-microsoft-office-language}
 
