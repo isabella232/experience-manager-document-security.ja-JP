@@ -4,14 +4,14 @@ description: Document Security Extension for Microsoft Office ソフトウェア
 uuid: b4c7d1d1-7eae-4fd3-8282-132c80a976e8
 contentOwner: khsingh
 discoiquuid: b32c7bb8-0060-4c2a-90fc-446b6ba39159
+exl-id: 25d2f439-e6c9-4d0a-bbd1-91d0f00dc683
 translation-type: ht
-source-git-commit: 19de0b62ac493c7507581abb607b008c64f77597
+source-git-commit: a15d49cdd21ccb8e6ec6c770a92bf16cb24ffaa1
 workflow-type: ht
 source-wordcount: '204'
 ht-degree: 100%
 
 ---
-
 
 # Adobe Experience Manager Document Security／LiveCycle Rights Management Extension for Microsoft Office のダウンロード {#download-adobe-experience-manager-document-security-livecycle-rights-management-extension-for-microsoft-office}
 
@@ -35,4 +35,3 @@ Document Security Extension for Microsoft Office ソフトウェアは、重要�
 | Microsoft Office 32 ビット版 | [EXE をダウンロードする](http://download.macromedia.com/pub/livecycle/policyserver/DocumentSecurityExtensionforMicrosoftOffice.exe) | [MSI をダウンロードする](http://download.macromedia.com/pub/livecycle/policyserver/DocumentSecurityExtensionforMicrosoftOffice.zip) |
 |---|---|---|
 | Microsoft Office 64 ビット版 | [EXE をダウンロードする](http://download.macromedia.com/pub/livecycle/policyserver/DocumentSecurityExtensionforMicrosoftOffice64.exe) | [MSI をダウンロードする](http://download.macromedia.com/pub/livecycle/policyserver/DocumentSecurityExtensionforMicrosoftOffice64.zip) |
-
