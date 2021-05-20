@@ -6,9 +6,8 @@ content-type: reference
 topic-tags: using
 discoiquuid: cf93f9f5-1fb6-4909-815e-0ffb8c6ea6d1
 exl-id: 3e07c031-3f88-4bde-bdb3-b136ef5f9527
-translation-type: ht
 source-git-commit: a15d49cdd21ccb8e6ec6c770a92bf16cb24ffaa1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 100%
 
@@ -30,7 +29,7 @@ Document Security により、許可されたユーザーだけが、知的財�
 
 ポリシーを使用してファイルを保護すると、配布後もファイルを継続的に管理できます。イベントを監査して、受信者がいつどのようにファイルを使用しているかを追跡したり、ポリシーに変更を加えたり、ユーザーがファイルにそれ以上アクセスできないようにしたり、ファイルに関連付けられているポリシーを変更したりできます。
 
-## ポリシーの使用 {#how-policies-work}
+## ポリシーの使用  {#how-policies-work}
 
 ポリシーは、許可されたユーザーおよび知的財産に適用される機密設定に関する情報で構成されます。リンクされた LDAP または Active Directory リストに含まれることで Document Security に認識される人であれば誰でもユーザーになれます。また、Document Security への登録を招待された人や、管理者がアカウントを作成した人もユーザーになれます。
 
@@ -42,7 +41,7 @@ Document Security により、許可されたユーザーだけが、知的財�
 
 オフラインアクセスがポリシーで許可されている場合、受信者は、ポリシーで保護されたファイルを、ポリシーで指定された期間、オフライン（アクティブなインターネット接続やネットワーク接続がない状態）で使用することもできます。
 
-## ポリシーで保護されたファイルの使用 {#how-policy-protected-files-work}
+## ポリシーで保護されたファイルの使用  {#how-policy-protected-files-work}
 
 ポリシーで保護された Word、Excel および PowerPoint ファイルを開き、使用できるようにするには、該当するユーザーが受信者としてポリシーに含まれているか、匿名アクセスが許可されていて、Document Security Extension for Microsoft Office がインストールされている必要があります。Document Security Extension for Microsoft Office ソフトウェアを持っていないユーザーに、ポリシーで保護されたファイルを渡す場合は、ソフトウェアのコピーを渡すか、Web サイトからソフトウェアをダウンロードする方法を教えてください。インストーラーがない場合は、[ダウンロードページ](https://www.adobe.com/jp/products/livecycle/rightsmanagement/extension/downloads.html)からダウンロードできます。
 
