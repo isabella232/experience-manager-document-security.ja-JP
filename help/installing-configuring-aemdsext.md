@@ -6,9 +6,8 @@ content-type: reference
 topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
-translation-type: ht
 source-git-commit: a15d49cdd21ccb8e6ec6c770a92bf16cb24ffaa1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2796'
 ht-degree: 100%
 
@@ -70,7 +69,7 @@ Document Security Extension のインストールに最低限必要なシステ�
 
 Document Security Extension を使用するには、Adobe LiveCycle Rights Management ES2 以降または AEM 6.0 Forms 以降向けの Document Security アドオンに接続できる必要があります。
 
-## Document Security Extension for Microsoft Office のインストール {#installing-document-security-extension-for-microsoft-office}
+## Document Security Extension for Microsoft Office のインストール  {#installing-document-security-extension-for-microsoft-office}
 
 [ダウンロードページ](download-installer.md)でインストーラーをダウンロードすることができます。インストーラーの実行可能ファイルを直接カスタマイズすることはできませんが、ソフトウェアを対話形式でインストールすることも、サイレントインストールを実行することもできます。ソフトウェアをインストールするには、管理者として Windows にログインします。
 
@@ -248,7 +247,7 @@ MSI ファイルを作成し設定する方法を以下の手順で説明しま�
 
 ポリシー自動適用の設定については、[デフォルトポリシーの自動適用の設定](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p)を参照してください。
 
-## リボンを使用しないユーザーインターフェイスを有効にする方法 {#enable-ribbon-less-user-interface}
+## リボンを使用しないユーザーインターフェイスを有効にする方法  {#enable-ribbon-less-user-interface}
 
 リボンを使用しないユーザーインターフェイスは、Windows レジストリの設定を変更することで有効／無効にすることができます。レジストリを更新し、リボンを使用しないユーザーインターフェイスを有効にするには、次の手順を実行します。
 
@@ -260,11 +259,11 @@ MSI ファイルを作成し設定する方法を以下の手順で説明しま�
 
 1. レジストリエディターを終了します。
 
-## Microsoft Excel からの印刷時に透かしを付ける方法 {#enable-watermark-for-printing-in-microsoft-excel}
+## Microsoft Excel からの印刷時に透かしを付ける方法  {#enable-watermark-for-printing-in-microsoft-excel}
 
 Windows のレジストリ設定を変更することで、既存のヘッダーとフッターに動的ウォーターマークを共存させることができます。レジストリ設定では、印刷中にのみウォーターマークが有効になります。レジストリを更新し、ウォーターマークも印刷するには、以下の手順を実行します。
 
-1. Windows レジストリを変更する前に、バックアップを作成してください。詳しい手順については、[Windows レジストリを変更する方法](https://support.microsoft.com/ja-jp/kb/136393)を参照してください。
+1. Windows レジストリを変更する前に、バックアップを作成してください。詳しい手順については、[Windows レジストリを変更する方法](https://support.microsoft.com/en-us/kb/136393)を参照してください。
 1. レジストリエディタで、HKEY_CURRENT_USER\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 または HKEY_LOCAL_MACHINE\WOW6432NODE\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 を開きます。
 1. 新しいレジストリキー **WatermarkMode** を作成します。
 1. WatermarkModeレジストリキーで、**WatermarkMode** の DWORD を作成し、**WatermarkMode** の DWORD 値を「**1**」に設定します。
@@ -279,7 +278,7 @@ Windows のレジストリ設定を変更することで、既存のヘッダー
 
 AEM Document Security for Microsoft Office プラグインがインストールされていない PC 上でも、保護されたドキュメントをユーザーが開こうとする可能性があります。このような PC では、文書を開くことができません。そのような PC では、AEM Document Security for Microsoft Office プラグインのダウンロード方法などの情報を含む表紙を表示させることができます。
 
-### 表紙を構成する前に、以下の事項を実行または確認します。 {#before-you-configure-a-cover-page}
+### 表紙を構成する前に、以下の事項を実行または確認します。  {#before-you-configure-a-cover-page}
 
 * CommonResources.dll ファイルのバックアップを作成する。デフォルトのパス：
 
@@ -331,7 +330,7 @@ CommonResources.dll ファイルには、リソーステンプレートに関す
  </tbody>
 </table>
 
-#### テンプレートをカバーページとして設定する方法 {#configure-the-template-as-a-cover-page}
+#### テンプレートをカバーページとして設定する方法  {#configure-the-template-as-a-cover-page}
 
 1. Microsoft Visual Studio を開きます。CommonResources.dll ファイルを参照して開き、編集します。
 
