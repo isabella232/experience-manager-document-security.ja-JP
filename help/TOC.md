@@ -9,10 +9,9 @@ breadcrumb-title: Document Security ガイド
 user-guide-description: Document Security Extension for Microsoft® Office を使用すると、認証したユーザーに対してのみ、知的財産を含む Word、Excel、および PowerPoint ファイルの使用を許可することができます。
 feature: Document Security
 role: Business Practitioner
-translation-type: ht
 source-git-commit: 7be2b17e7685a391dcccde2cc008802b5773cadf
-workflow-type: ht
-source-wordcount: '102'
+workflow-type: tm+mt
+source-wordcount: '99'
 ht-degree: 100%
 
 ---
