@@ -6,9 +6,8 @@ content-type: reference
 topic-tags: using
 discoiquuid: f4c2460c-174f-4e4d-b804-1eb051d2781e
 exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
-translation-type: ht
 source-git-commit: a15d49cdd21ccb8e6ec6c770a92bf16cb24ffaa1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '6270'
 ht-degree: 100%
 
@@ -87,7 +86,7 @@ Document Security サーバーで証明書ベースの認証が使用される�
 
 1. デフォルトとして指定するサーバーを選択し、「**デフォルトとして設定**」をクリックします。デフォルトサーバーの横に星印が表示されます。
 
-### サードパーティ認証プロバイダーの使用 {#using-third-party-authentication-providers}
+### サードパーティ認証プロバイダーの使用  {#using-third-party-authentication-providers}
 
 AEM Forms Document Security で、サードパーティ認証プロバイダーを使用できるようになりました。これらの認証プロバイダーは、保護された文書に追加的なアクセスレイヤーを提供します。AEM Forms Document Security は、以下の拡張認証ワークフローをサポートします。
 
@@ -97,7 +96,7 @@ AEM Forms Document Security で、サードパーティ認証プロバイダー�
 * AEM Forms on JEE サーバーに設定されたサードパーティ ID プロバイダーによる、カスタム拡張認証ワークフロー
 * SAML 認証をリスト表示するカスタムページを使用した拡張認証
 
-#### AEM Forms のデフォルト URL を使用した拡張認証 {#extended-authentication-using-default-aem-forms-url}
+#### AEM Forms のデフォルト URL を使用した拡張認証  {#extended-authentication-using-default-aem-forms-url}
 
 AEM Forms のデフォルト URL を使用して拡張認証を実行できます。デフォルトランディングページには Adobe ブランドが表示されます。また、AEM Forms のデフォルト URL を使用して拡張認証を実行する場合は、デフォルトの AEM Forms 設定が使用されます。
 
@@ -137,13 +136,13 @@ AEM Forms のデフォルト URL を使用して拡張認証を実行できま�
 
    >[!NOTE]
    >
-   >&lt;entry key=”sso-l” value=”/ sample_/login.jsp”/>!!discoiqbr!!&lt;entry key=”sso-s” value=”/ sample_/welcome.jsp”>!!discoiqbr!!&lt;entry key=”sso-o” value=”/ sample_/logout.jsp”/>!!discoiqbr!!
+   >&lt;entry key=”sso-l” value=”/ sample_/login.jsp”/>!!discoiqbr!!&lt;entry key=”sso-s” value=”/ sample_/welcome.jsp”>!!discoqbr!!&lt;entry key=”sso-o” value=”/ sample_/logout.jsp”/>!!discoqbr!!
 
    config.xml ファイルを更新する手順について詳しくは、「[Document Security 設定ファイルの手動による編集](https://helpx.adobe.com/jp/aem-forms/6-3/admin-help/configuring-client-server-options.html#manually_editing_the_document_security_configuration_file)」を参照してください。
 
    これで、カスタムランディングページ URL を使用して拡張認証を実行するように AEM Forms Document Security が設定されました。
 
-#### AEM Forms サーバーにサードパーティ ID プロバイダーが設定されている場合のデフォルト拡張認証ワークフロー {#default-extended-authentication-workflow-with-third-party-identity-providers-configured-on-aem-forms-server}
+#### AEM Forms サーバーにサードパーティ ID プロバイダーが設定されている場合のデフォルト拡張認証ワークフロー  {#default-extended-authentication-workflow-with-third-party-identity-providers-configured-on-aem-forms-server}
 
 拡張認証では AEM Forms サーバーで使用可能な各種認証機能を使用できます（SAML、[その他の例]など）。
 
@@ -151,7 +150,7 @@ AEM Forms のデフォルト URL を使用して拡張認証を実行できま�
 
 保護された文書を Acrobat で開くと、次の画面が表示されます。
 
-#### AEM Forms サーバーに SAML プロバイダーが設定されている場合のカスタム拡張認証ワークフロー {#custom-extended-authentication-workflow-when-saml-providers-are-configured-on-aem-forms-server}
+#### AEM Forms サーバーに SAML プロバイダーが設定されている場合のカスタム拡張認証ワークフロー  {#custom-extended-authentication-workflow-when-saml-providers-are-configured-on-aem-forms-server}
 
 AEM Forms サーバーに SAML プロバイダーが設定されている場合、ランディングページ URL が表示される前に、SAML 認証用に設定されているすべての ID プロバイダーが含まれたページが表示されます。
 
@@ -160,7 +159,7 @@ AEM Forms サーバーに SAML プロバイダーが設定されている場合�
 * SAML 認証が AEM Forms サーバーで設定されている。
 * カスタム war（カスタム認証ページと、ユーザー資格情報を受け付けて AEM Forms サーバーで認証を実行するための完全なロジックを含む）が AEM Forms サーバーにデプロイされている。
 
-#### カスタムページを使用した SAML 認証のリスト表示 {#using-custom-page-for-listing-saml-authentications}
+#### カスタムページを使用した SAML 認証のリスト表示  {#using-custom-page-for-listing-saml-authentications}
 
 AEM Forms サーバーに設定されているすべての認証プロバイダーが含まれたカスタムページを表示することもできます。このようなページを作成するには、次の手順を実行します。
 
@@ -182,8 +181,7 @@ Document Security アカウントがない場合、次のイベントが発生�
 登録を済ませてアカウントをアクティベートすると、ポリシーによって使用が承認されていれば、ポリシーで保護されたファイルを使用できるようになります。
 
 >[!NOTE]
->
->ポリシーで保護されたファイルを受け取っても Document Security アカウントがない場合や、登録の招待を受けていない場合は、ファイルの送信者にお問い合わせください。
+ポリシーで保護されたファイルを受け取っても Document Security アカウントがない場合や、登録の招待を受けていない場合は、ファイルの送信者にお問い合わせください。
 
 Document Security から電子メールで登録の招待を受けた場合、その電子メールに記載された URL を使用してオンライン登録ページを開いて登録できます。登録後、アカウントのアクティベートに関する通知を受信します。
 
@@ -194,8 +192,7 @@ Document Security から電子メールで登録の招待を受けた場合、�
 1. 該当するボックスに、自分の名前、組織およびパスワードを入力します。パスワードには、任意の 8 文字のテキストを使用できます。
 
    >[!NOTE]
-   >
-   >覚えやすいパスワードを選んでください。パスワードを忘れた場合に確認する方法はありません。
+   覚えやすいパスワードを選んでください。パスワードを忘れた場合に確認する方法はありません。
 
 1. 「**登録**」をクリックします。メッセージが表示され、アクティベーション用の電子メールメッセージがユーザーに送信されたことが通知されます。
 1. Document Security 登録確認電子メールを開きます。
@@ -205,7 +202,7 @@ Document Security から電子メールで登録の招待を受けた場合、�
 1. 登録時に作成したパスワードを「**パスワード**」ボックスに入力します。
 1. 「**ログイン**」をクリックします。
 
-### ポリシーの作成と管理 {#creating-and-managing-policies}
+### ポリシーの作成と管理  {#creating-and-managing-policies}
 
 Document Security 管理者から権限を付与されている場合、Document Security Web ページのポリシーページでポリシーを作成し、自分のファイルに適用できます。
 
@@ -324,17 +321,16 @@ Document Security Web ページでポリシーの作成に使用できるポリ�
  </tbody>
 </table>
 
-ポリシーの作成と管理について詳しくは、[Document Security エンドユーザーヘルプ](http://help.adobe.com/en_US/AEMForms/6.1/RMHelp/)を参照してください。
+ポリシーの作成と管理について詳しくは、[「Document Security エンドユーザーヘルプ」](http://help.adobe.com/en_US/AEMForms/6.1/RMHelp/)を参照してください。
 
-### ポリシーの適用 {#applying-policies}
+### ポリシーの適用  {#applying-policies}
 
 自分で作成したポリシーやアクセス可能なポリシーセットに含まれているポリシーなど、使用可能なあらゆるポリシーをファイルに適用できますポリシーを適用する前に、ファイルを保存する必要があります。
 
 適用したポリシーは AEM Document Security メニューの「Recently Used」リストに追加されるため、頻繁に使用するポリシーを適用しやすくなります。Document Security の複数のインスタンスを使用する場合、「Recently Used」リストには、現在接続しているサーバーのポリシーのみが表示されます。または、Document Security のインスタンスにログインしていない場合はデフォルトサーバーのポリシーのみが表示されます。
 
 >[!NOTE]
->
->ポリシーを適用できるのは、Word ドキュメントファイル（.doc、Microsoft Office 2010 および 2013では .docx と .docm も）、Excel ワークブックファイル（.xls、Microsoft Office 2010 および 2013 では .xlsx と .xlsm も）および PowerPoint プレゼンテーションファイル（.ppt、Microsoft Office 2010 および 2013 では .pptx と .pptm も）のみです。Word テンプレートファイル（.dot）、Excel テンプレートファイル（.xlt）、PowerPoint デザインテンプレートファイル（.pot）にはポリシーを適用できません。
+ポリシーを適用できるのは、Word ドキュメントファイル（.doc、Microsoft Office 2010 および 2013では .docx と .docm も）、Excel ワークブックファイル（.xls、Microsoft Office 2010 および 2013 では .xlsx と .xlsm も）および PowerPoint プレゼンテーションファイル（.ppt、Microsoft Office 2010 および 2013 では .pptx と .pptm も）のみです。Word テンプレートファイル（.dot）、Excel テンプレートファイル（.xlt）、PowerPoint デザインテンプレートファイル（.pot）にはポリシーを適用できません。
 
 #### ポリシーの適用 {#apply-a-policy}
 
@@ -356,21 +352,20 @@ Document Security Web ページでポリシーの作成に使用できるポリ�
 
 ファイルの発行者の組織内にいるかどうかにかかわらず、ポリシーで保護されたファイルを使用できます。ポリシーで保護されたファイルを開くには、リンクされている LDAP または Active Directory リストに含めるか、LiveCycle または AEM forms on JEE のローカルユーザーとして追加するか、ユーザーとして招待を受けてから Document Security に登録することで、Document Security から認識される必要があります。
 
-ポリシーで保護されたファイルを受け取っても Document Security アカウントがない場合や、登録の招待を受けていない場合は、ファイルの送信者にお問い合わせください。
+ポリシーで保護されたファイルを受け取り、Document Security アカウントを持っていない場合、または登録の招待を受けていない場合、ファイルの送信者にお問い合わせください。
 
-### ポリシーで保護されたファイルの Microsoft Office での操作 {#working-with-policy-protected-files-in-microsoft-office}
+### ポリシーで保護されたファイルの Microsoft Office での操作  {#working-with-policy-protected-files-in-microsoft-office}
 
 Document Security Extension for Microsoft Office では、ファイルの発行者の知的財産を保護するために、一部の Word、Excel、PowerPoint 機能を制限しています。ファイルを変更する権限がない場合は、変更内容をファイルに保存できません。
 
 ポリシーで保護されたファイルで作業している場合、一部の製品機能が使用できないことや、通常どおり動作しないことがあります。また、保護されていないファイルを開く場合、ほとんどの機能は保護されていないファイルでも有効です。ただし、ポリシーで保護されたファイルに対してコピーまたは書き出しの権限を持っていない場合、そのファイルから内容を読み込んだり、コピーしたりすることはできません。
 
 >[!NOTE]
->
->Document Security Extension 対応の Office アプリケーションを使用する場合、Windows DEP 設定を無効にすることをお勧めします。また、Document Security Extension がインストールされ、McAfee VirusScan の On-Access Scan 機能が有効なコンピューターで Office アプリケーションをスムーズに起動するには、McAfee VirusScan Console の「Buffer Overflow Protection」オプションを無効にしてください。
+Document Security Extension 対応の Office アプリケーションを使用する場合、Windows DEP 設定を無効にすることをお勧めします。また、Document Security Extension がインストールされ、McAfee VirusScan の On-Access Scan 機能が有効なコンピューターで Office アプリケーションをスムーズに起動するには、McAfee VirusScan Console の「Buffer Overflow Protection」オプションを無効にしてください。
 
 使用できない機能がある場合、メニューのコマンド名とそれに関連するツールバーボタンは使用できなくなります。Document Security Extension for Microsoft Office では、コマンドまたはボタンにマウスポインターを移動すると、Document Security によってそのコマンドが使用できなくなったことを示すツールヒントが表示されます。
 
-### ポリシーで保護されたファイルを開く {#opening-policy-protected-files}
+### ポリシーで保護されたファイルを開く  {#opening-policy-protected-files}
 
 他のファイルを開くときと同様の方法を使用して、ポリシーで保護されたファイルを開くことができます。Document Security にログインしていない場合は、インターネットに接続せずにファイルをオフラインで開くことができる場合を除き、ログインが求められます。ログイン処理をキャンセルすると、アクセスは拒否されます。
 
@@ -384,7 +379,7 @@ Document Security に実装されている認証方法によっては、保護�
 
 保護されたファイルを開く際のユーザーエクスペリエンスは、サーバーでの相互認証設定により異なります。有効なクライアント証明書が 1 つのみインストールされている場合は、認証ダイアログは表示されずにファイルが正常に開きます。ただし、1 台のコンピューター複数のクライアント証明書がインストールされている場合は、認証ダイアログが表示されます。保護されたファイルを開くには、ユーザーが有効な証明書を選択する必要があります。
 
-### ファイルからのポリシー保護の削除 {#removing-policy-protection-from-a-file}
+### ファイルからのポリシー保護の削除  {#removing-policy-protection-from-a-file}
 
 権限がある場合、自分で保護したファイルからポリシー保護を削除できます。保護を削除すると、ファイルは Document Security で保護されなくなります。
 
@@ -393,10 +388,9 @@ Document Security に実装されている認証方法によっては、保護�
    Document Security のログイン情報をまだ指定していない場合は、ユーザー名とパスワードの入力を求めるダイアログボックスが表示されます。
 
 >[!NOTE]
->
->自分で保護したファイルからポリシーを削除できない場合は、Document Security 管理者に問い合わせてください。
+自分で保護したファイルからポリシーを削除できない場合は、Document Security 管理者に問い合わせてください。
 
-### セキュリティ設定の表示 {#viewing-security-settings}
+### セキュリティ設定の表示  {#viewing-security-settings}
 
 印刷、コピー、変更、オフラインでのアクセスおよびファイルの有効期間について、現在のファイルに設定された権限を表示できます。
 
@@ -413,10 +407,9 @@ Document Security Extension for Microsoft Office 2010 では、「Document Secur
 ポリシー自動適用機能が有効な場合は、Document Security サーバーにログインするように Document Security Extension for Microsoft Office から求められます。サーバーで認証を受けるには、ユーザー名とパスワードを指定する必要があります。正しいログイン資格情報を指定した場合は、ドキュメントは保存および保護されます。
 
 >[!NOTE]
->
->Document Security にログインできない場合は、ドキュメントが保存されるときと、保存されないときがあります。どちらになるかは、管理者がポリシー自動適用をどのように設定したかによって決まります。この状況でのドキュメントの処理方法については、管理者にお問い合わせください。
+Document Security にログインできない場合は、ドキュメントが保存されるときと、保存されないときがあります。どちらになるかは、管理者がポリシー自動適用をどのように設定したかによって決まります。この状況でのドキュメントの処理方法については、管理者にお問い合わせください。
 
-### オフラインアクセスの同期 {#synchronizing-for-offline-access}
+### オフラインアクセスの同期  {#synchronizing-for-offline-access}
 
 オフライン状態で Document Security に接続していないときにファイルを開くことを、ポリシーで許可できます。オフラインで作業するには、事前に Document Security にログインしてサーバーで資格情報を確立しておく必要があります。オフラインでファイルを操作する場合、接続を解除する前に Document Security と同期して、ファイルのポリシー設定をサーバーに合わせて最新の状態にすることをお勧めします。また、ファイルをオフラインで開く前に、一度オンラインで開くこともお勧めします。一度もオンラインでファイルを開いたり、サーバーと同期したりしていない場合でも、ポリシーで保護されたファイルをオフラインで使用できることがあります。ただし、オフラインリース期間が期限切れになっていないことと、手動または自動でサーバーと最後に同期してからファイルのポリシー設定が変更されていないことが条件になります。
 
@@ -483,9 +476,9 @@ Document Security Extension for Microsoft Office では、次のような透か�
 
 Document Security Web ページを開いて、ユーザーポリシーを作成および更新したり、ポリシーで保護されたファイルに関するステータスや監査情報を表示したりできます。また、Document Security Web ページを使用して、ポリシーを変更したり、ポリシーで保護されたファイルに対するアクセスを無効にしたりできます。
 
-Document Security Web ページを開くには、Document Security Extension for Microsoft Office 2010 および 2013 で、「**Document Security**」タブの「**ポリシーを作成および管理**」を選択します。ログイン情報を指定していない場合、ブラウザーが開き、サーバーログインページが表示されます。
+Document Security Web ページを開くには、Document Security Extension for Microsoft Office 2010 および 2013 で、「**Document Security**」タブの「**ポリシーを作成および管理**」を選択します。ログイン情報を指定していない場合、ブラウザが開き、サーバーログインページが表示されます。
 
-### ポリシーの変更 {#changing-policies}
+### ポリシーの変更  {#changing-policies}
 
 Document Security 管理者またはファイル発行者の権限を持っている場合、後でファイルに異なるポリシーを適用したり、現在適用されているポリシーの設定を変更したりできます。
 
@@ -497,7 +490,7 @@ Document Security 管理者またはファイル発行者の権限を持って�
 
 1. リストのポリシーを選択して、「**適用**」をクリックします。
 
-### ファイルアクセス権限の取り消し {#revoking-file-access-privileges}
+### ファイルアクセス権限の取り消し  {#revoking-file-access-privileges}
 
 保護されたファイルを開く機能を無効にできます。ファイルのアクセス権限を無効にする場合、そのファイルを開こうとしたユーザーに表示するメッセージを指定することもできます。また、改定版に置き換える場合は、更新版ファイルの URL を指定することもできます。
 
@@ -543,7 +536,7 @@ Document Security Extension for Microsoft Office 、2010 および 2013 で、**
 
 Document Security Web ページのイベントページが開き、現在のファイルについて監査されたイベントが表示されます。
 
-### Microsoft Office で制限される機能 {#microsoft-office-restricted-features}
+### Microsoft Office で制限される機能  {#microsoft-office-restricted-features}
 
 知的財産を保護するために、ポリシーで保護されたファイルを開くときに一部の Microsoft Office 機能が使用できなくなります。使用できない機能のリストは、現在のユーザーに付与されている権限によって異なります。保護されたファイルでのみ使用できない機能と、保護されたセッション内ではすべてのファイルで使用できない機能があります。一般的に、保護されたセッションの期間は、ポリシーで保護されたファイルを開いたときから、アプリケーションを閉じたときまで、またはセッションが期限切れになったときまでです。
 
@@ -552,8 +545,7 @@ Document Security Web ページのイベントページが開き、現在のフ�
 コマンドを使用できない場合、メニューのコマンド名や関連するツールバーボタンはグレー表示されます。
 
 >[!NOTE]
->
->埋め込みファイルへのリンクを含むファイルにポリシーを適用しても、リンク先のファイルにポリシーは適用されません。Document Security for Microsoft Office では、リンク先のファイルにまで保護が拡張されません。
+埋め込みファイルへのリンクを含むファイルにポリシーを適用しても、リンク先のファイルにポリシーは適用されません。Document Security for Microsoft Office では、リンク先のファイルにまで保護が拡張されません。
 
 * ポリシーで保護された Word、Excel、PowerPoint ファイルは、Internet Explorer ブラウザーウィンドウ内で開くことができません。
 * 変更権限のみを付与されたユーザーは、Windows のクリップボードを使用して、別のアプリケーションの内容をファイルにコピーできません。Microsoft Office クリップボードオプションを有効にすると、内容をファイルにコピーできます。
