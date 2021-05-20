@@ -7,9 +7,8 @@ content-type: reference
 topic-tags: using
 discoiquuid: bdc3f174-e417-4d3e-b3af-972cdcc10133
 exl-id: 98f24032-0774-47f8-bcc5-1ee37b417833
-translation-type: ht
 source-git-commit: a15d49cdd21ccb8e6ec6c770a92bf16cb24ffaa1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 100%
 
@@ -23,7 +22,7 @@ AEM Document Security Extension for Microsoft Office をインストールまた
 
 インストールおよび設定をすべてドキュメントどおりに行っている場合は、以降のセクションを参照して、発生している問題に類似の問題があるか確認してください。
 
-### Document Security Extension for Microsoft Office が起動に失敗する {#document-security-extension-fails-to-load-for-microsoft-office-applications}
+### Document Security Extension for Microsoft Office が起動に失敗する  {#document-security-extension-fails-to-load-for-microsoft-office-applications}
 
 Windows レジストリの LoadBehavior プロパティは、ドキュメントセキュリティプラグイン実行時の動作を指定します。LoadBehavior プロパティを 3 に設定すると、すべてのプラグインが自動的に読み込まれます。Document Security Extension for Microsoft Office をインストールする前に、LoadBehavior プロパティの値が 3 に設定されていることを確認してください。
 
@@ -37,8 +36,8 @@ LoadBehavior の詳細については、[VSTO アドインのレジストリエ�
 
 ## 管理タスクのトラブルシューティング {#admintasks}
 
-この節では、インストールされている AEM Document Security Extension で発生し得る問題について説明します。
+このセクションでは、インストールされている AEM Document Security Extension で発生し得る問題について説明します。
 
-### Document Security Extension をインストールした後、Microsoft Office アプリケーションがスムーズに起動しなくなった {#microsoft-office-applications-dont-start-smoothly-on-installing-document-security-extension}
+### Document Security Extension をインストールした後、Microsoft Office アプリケーションがスムーズに起動しなくなった  {#microsoft-office-applications-dont-start-smoothly-on-installing-document-security-extension}
 
 Document Security Extension がインストールされ、McAfee VirusScan の On-Access Scan 機能が有効なコンピューターで Office アプリケーションをスムーズに起動するには、McAfee VirusScan Console の「Buffer Overflow Protection」オプションを無効にしてください。
