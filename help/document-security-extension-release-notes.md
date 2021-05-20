@@ -6,9 +6,8 @@ content-type: reference
 topic-tags: installing
 discoiquuid: c9342c28-8289-4831-a613-4bc03431f557
 exl-id: 582f10bb-60d2-46ed-b81d-5818a040edc6
-translation-type: ht
 source-git-commit: a15d49cdd21ccb8e6ec6c770a92bf16cb24ffaa1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1030'
 ht-degree: 100%
 
@@ -28,9 +27,9 @@ ht-degree: 100%
 
 本バージョンの Document Security Extension for Microsoft Office は、Adobe LiveCycle Rights Management ES2 以降、および AEM Forms 向け Document Security アドオンと互換性があります。
 
-AEM Document Security Extension for Microsoft Office をインストールする前に、本書の情報をお読みください。詳細なインストール手順については、[AEM Document Security Extension for Microsoft Office のインストールと設定方法](installing-configuring-aemdsext.md)の記事を参照してください。
+AEM Document Security Extension for Microsoft Office をインストールする前に、本書の情報をお読みください。詳細なインストール手順については、[『 AEM Document Security Extension for Microsoft Office のインストールと設定方法』](installing-configuring-aemdsext.md)の記事を参照してください。
 
-## 修正された問題 {#fixed-issues}
+## 修正された問題  {#fixed-issues}
 
 * 文字列が縦に表示されて、改行が誤った位置に追加されます。（参照番号 CQ-4201054）
 
@@ -40,11 +39,11 @@ AEM Document Security Extension for Microsoft Office をインストールする
 
 AEM Document Security Extension for Microsoft Office はサードパーティ製プラグインと一緒には機能しません。Document Security Extension for Microsoft Office をインストールする前に、Microsoft Office 用のサードパーティ製プラグインをすべてアンインストールしてください。
 
-### Microsoft Word、Excel、および PowerPoint でメニューオプションが無効になる {#disabled-menu-options-in-microsoft-word-excel-and-powerpoint}
+### Microsoft Word、Excel、および PowerPoint でメニューオプションが無効になる  {#disabled-menu-options-in-microsoft-word-excel-and-powerpoint}
 
 AEM Document Security Extension for Microsoft Office は組み込みの保護機能を使用して、ドキュメント、ワークシート、およびプレゼンテーションを保護します。この操作により、Excel、Word、および PowerPoint のメニューオプションの一部が無効になります。
 
-### Microsoft Office 2013、2016 および 2019 における制限 {#restrictions-for-microsoft-office}
+### Microsoft Office 2013、2016 および 2019 における制限  {#restrictions-for-microsoft-office}
 
 Microsoft Office で保護セッションを使用している間は、次のオプションが使用できません。
 
@@ -71,7 +70,7 @@ Microsoft Office で保護セッションを使用している間は、次のオ
    * ファイル／情報／文書の保護／デジタル署名の追加
    * ファイル／情報／文書の保護／最終版にする
 
-### 保護されたドキュメントを SharePoint Server から開けない {#opening-a-protected-document-from-sharepoint-server}
+### 保護されたドキュメントを SharePoint Server から開けない  {#opening-a-protected-document-from-sharepoint-server}
 
 保護されたドキュメントを開く：ファイルタイプに関連付けられている Microsoft Office プログラム（Microsoft Word、Microsoft Excel、Microsoft PowerPoint など）を先に開かずに、Document Security Extension for Microsoft Office で保護されたドキュメントを SharePoint Server から開こうとすると、ドキュメントが開かれない場合があります。該当するプラグインをインストールする必要があることを示すエラーメッセージが表示されます。したがって、Document Security Extension for Microsoft Office で保護されたドキュメントを SharePoint Server から開く前に、関連付けられている Microsoft Office プログラムを開くことをお勧めします。
 
@@ -79,11 +78,11 @@ Microsoft Office で保護セッションを使用している間は、次のオ
 
 保護されたドキュメントを SharePoint Server から開くと、適用されたポリシーに関係なく、ドキュメントのすべての権限が無効になります。
 
-### プリンターがインストールされていない場合に、Excel 2013、2016、2019 ファイルに対して動的透かしのポリシーを適用する {#apply-a-policy-with-a-dynamic-watermark-to-microsoft-excel-microsoft-excel-and-microsoft-excel-file-with-no-printer-installed}
+### プリンターがインストールされていない場合に、Excel 2013、2016、2019 ファイルに対して動的透かしのポリシーを適用する  {#apply-a-policy-with-a-dynamic-watermark-to-microsoft-excel-microsoft-excel-and-microsoft-excel-file-with-no-printer-installed}
 
 プリンターがインストールされていないコンピューターで動的透かし付きのポリシーを Excel 2013、2016 または 2019 ファイルに適用し、そのファイルを保存すると、「Internal error while applying dynamic watermark」というエラーが発生します。このエラーは、保護ファイルを再度開くときにも表示されます。透かしは適用されず、表示／ページレイアウトにも表示されません。
 
-### サポートされている Office アプリケーションで Windows データ実行防止機能を無効にする {#disable-windows-data-execution-prevention-for-supported-office-applications}
+### サポートされている Office アプリケーションで Windows データ実行防止機能を無効にする  {#disable-windows-data-execution-prevention-for-supported-office-applications}
 
 Document Security Extension for Microsoft Office を使用するときは、Windows データ実行防止（DEP）機能を無効にすることをお勧めします。
 
@@ -93,13 +92,13 @@ Document Security Extension for Microsoft Office を使用するときは、Wind
 
 ### Document Security Extension for Microsoft Office および McAfee VirusScan がインストールされている PC 上で Office アプリケーションを起動する {#starting-office-applications-on-a-machine-containing-document-security-extension-for-microsoft-office-and-mcafee-virusscan}
 
-Document Security がインストールされ、McAfee VirusScan の On-Access Scan 機能が有効なコンピューターで Office アプリケーションをスムーズに起動するには、McAfee VirusScan Console の「Buffer Overflow Protection」オプションを無効にしてください。
+Document Security がインストールされ、McAfee VirusScan の On-Access Scan 機能が有効なコンピュータで Office アプリケーションをスムーズに起動するには、McAfee VirusScan Console の「Buffer Overflow Protection」オプションを無効にしてください。
 
-### サポートされていない Microsoft Office 言語がインストールされている PC に Document Security Extension for Microsoft Office をインストールする {#installing-document-security-extension-for-microsoft-office-on-a-machine-with-an-unsupported-microsoft-office-language}
+### サポートされていない Microsoft Office 言語がインストールされている PC に Document Security Extension for Microsoft Office をインストールする  {#installing-document-security-extension-for-microsoft-office-on-a-machine-with-an-unsupported-microsoft-office-language}
 
 サポートされていない言語の Microsoft Office アプリケーションがインストールされている PC にDocument Security Extension for Microsoft Office をインストールする際は、事前に Office アプリケーションを少なくとも 1 回は起動してください。
 
-### ユーザーがオフラインアクセス権限を持っていない場合でも、「オフライン同期」ボタンが有効になる {#synchronize-offline-button-is-enabled-even-when-a-user-does-not-have-offline-permissions}
+### ユーザーがオフラインアクセス権限を持っていない場合でも、「オフライン同期」ボタンが有効になる  {#synchronize-offline-button-is-enabled-even-when-a-user-does-not-have-offline-permissions}
 
 ユーザーがそのファイルに対してオフラインアクセス権限を持っていない場合でも、「オフライン同期」ボタンが有効になります。ただし、ボタンを選択しても何も実行されません。
 
@@ -119,7 +118,7 @@ Microsoft Excel 文書のセルに画像が含まれているか、または背�
 
 クライアントマシン上の複数の証明書が存在し、ユーザーが証明書選択ダイアログをキャンセルすると、このダイアログが再び表示され、ユーザーはダイアログを 2 回キャンセルすることになります。
 
-### 保護されたドキュメントを Microsoft PowerPoint で編集できる {#microsoft-powerpoint-allows-editing-protected-documents}
+### 保護されたドキュメントを Microsoft PowerPoint で編集できる  {#microsoft-powerpoint-allows-editing-protected-documents}
 
 保護された文書を Microsoft PowerPoint 上で編集しようとすると、「この文書を変更することはできません。変更を保存することはできません」とのメッセージが表示されます。しかし、メッセージを閉じた後も、引き続きテキストの追加や編集をおこなうことができます。ただし保護された文書に対する変更は保存されません。
 
