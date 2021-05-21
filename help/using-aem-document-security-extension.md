@@ -181,7 +181,8 @@ Document Security アカウントがない場合、次のイベントが発生�
 登録を済ませてアカウントをアクティベートすると、ポリシーによって使用が承認されていれば、ポリシーで保護されたファイルを使用できるようになります。
 
 >[!NOTE]
-ポリシーで保護されたファイルを受け取っても Document Security アカウントがない場合や、登録の招待を受けていない場合は、ファイルの送信者にお問い合わせください。
+>
+>ポリシーで保護されたファイルを受け取っても Document Security アカウントがない場合や、登録の招待を受けていない場合は、ファイルの送信者にお問い合わせください。
 
 Document Security から電子メールで登録の招待を受けた場合、その電子メールに記載された URL を使用してオンライン登録ページを開いて登録できます。登録後、アカウントのアクティベートに関する通知を受信します。
 
@@ -192,7 +193,8 @@ Document Security から電子メールで登録の招待を受けた場合、�
 1. 該当するボックスに、自分の名前、組織およびパスワードを入力します。パスワードには、任意の 8 文字のテキストを使用できます。
 
    >[!NOTE]
-   覚えやすいパスワードを選んでください。パスワードを忘れた場合に確認する方法はありません。
+   >
+   >覚えやすいパスワードを選んでください。パスワードを忘れた場合に確認する方法はありません。
 
 1. 「**登録**」をクリックします。メッセージが表示され、アクティベーション用の電子メールメッセージがユーザーに送信されたことが通知されます。
 1. Document Security 登録確認電子メールを開きます。
@@ -330,7 +332,8 @@ Document Security Web ページでポリシーの作成に使用できるポリ�
 適用したポリシーは AEM Document Security メニューの「Recently Used」リストに追加されるため、頻繁に使用するポリシーを適用しやすくなります。Document Security の複数のインスタンスを使用する場合、「Recently Used」リストには、現在接続しているサーバーのポリシーのみが表示されます。または、Document Security のインスタンスにログインしていない場合はデフォルトサーバーのポリシーのみが表示されます。
 
 >[!NOTE]
-ポリシーを適用できるのは、Word ドキュメントファイル（.doc、Microsoft Office 2010 および 2013では .docx と .docm も）、Excel ワークブックファイル（.xls、Microsoft Office 2010 および 2013 では .xlsx と .xlsm も）および PowerPoint プレゼンテーションファイル（.ppt、Microsoft Office 2010 および 2013 では .pptx と .pptm も）のみです。Word テンプレートファイル（.dot）、Excel テンプレートファイル（.xlt）、PowerPoint デザインテンプレートファイル（.pot）にはポリシーを適用できません。
+>
+>ポリシーを適用できるのは、Word ドキュメントファイル（.doc、Microsoft Office 2010 および 2013では .docx と .docm も）、Excel ワークブックファイル（.xls、Microsoft Office 2010 および 2013 では .xlsx と .xlsm も）および PowerPoint プレゼンテーションファイル（.ppt、Microsoft Office 2010 および 2013 では .pptx と .pptm も）のみです。Word テンプレートファイル（.dot）、Excel テンプレートファイル（.xlt）、PowerPoint デザインテンプレートファイル（.pot）にはポリシーを適用できません。
 
 #### ポリシーの適用 {#apply-a-policy}
 
@@ -361,7 +364,8 @@ Document Security Extension for Microsoft Office では、ファイルの発行�
 ポリシーで保護されたファイルで作業している場合、一部の製品機能が使用できないことや、通常どおり動作しないことがあります。また、保護されていないファイルを開く場合、ほとんどの機能は保護されていないファイルでも有効です。ただし、ポリシーで保護されたファイルに対してコピーまたは書き出しの権限を持っていない場合、そのファイルから内容を読み込んだり、コピーしたりすることはできません。
 
 >[!NOTE]
-Document Security Extension 対応の Office アプリケーションを使用する場合、Windows DEP 設定を無効にすることをお勧めします。また、Document Security Extension がインストールされ、McAfee VirusScan の On-Access Scan 機能が有効なコンピューターで Office アプリケーションをスムーズに起動するには、McAfee VirusScan Console の「Buffer Overflow Protection」オプションを無効にしてください。
+>
+>Document Security Extension 対応の Office アプリケーションを使用する場合、Windows DEP 設定を無効にすることをお勧めします。また、Document Security Extension がインストールされ、McAfee VirusScan の On-Access Scan 機能が有効なコンピューターで Office アプリケーションをスムーズに起動するには、McAfee VirusScan Console の「Buffer Overflow Protection」オプションを無効にしてください。
 
 使用できない機能がある場合、メニューのコマンド名とそれに関連するツールバーボタンは使用できなくなります。Document Security Extension for Microsoft Office では、コマンドまたはボタンにマウスポインターを移動すると、Document Security によってそのコマンドが使用できなくなったことを示すツールヒントが表示されます。
 
@@ -388,7 +392,8 @@ Document Security に実装されている認証方法によっては、保護�
    Document Security のログイン情報をまだ指定していない場合は、ユーザー名とパスワードの入力を求めるダイアログボックスが表示されます。
 
 >[!NOTE]
-自分で保護したファイルからポリシーを削除できない場合は、Document Security 管理者に問い合わせてください。
+>
+>自分で保護したファイルからポリシーを削除できない場合は、Document Security 管理者に問い合わせてください。
 
 ### セキュリティ設定の表示  {#viewing-security-settings}
 
@@ -407,7 +412,8 @@ Document Security Extension for Microsoft Office 2010 では、「Document Secur
 ポリシー自動適用機能が有効な場合は、Document Security サーバーにログインするように Document Security Extension for Microsoft Office から求められます。サーバーで認証を受けるには、ユーザー名とパスワードを指定する必要があります。正しいログイン資格情報を指定した場合は、ドキュメントは保存および保護されます。
 
 >[!NOTE]
-Document Security にログインできない場合は、ドキュメントが保存されるときと、保存されないときがあります。どちらになるかは、管理者がポリシー自動適用をどのように設定したかによって決まります。この状況でのドキュメントの処理方法については、管理者にお問い合わせください。
+>
+>Document Security にログインできない場合は、ドキュメントが保存されるときと、保存されないときがあります。どちらになるかは、管理者がポリシー自動適用をどのように設定したかによって決まります。この状況でのドキュメントの処理方法については、管理者にお問い合わせください。
 
 ### オフラインアクセスの同期  {#synchronizing-for-offline-access}
 
@@ -545,7 +551,8 @@ Document Security Web ページのイベントページが開き、現在のフ�
 コマンドを使用できない場合、メニューのコマンド名や関連するツールバーボタンはグレー表示されます。
 
 >[!NOTE]
-埋め込みファイルへのリンクを含むファイルにポリシーを適用しても、リンク先のファイルにポリシーは適用されません。Document Security for Microsoft Office では、リンク先のファイルにまで保護が拡張されません。
+>
+>埋め込みファイルへのリンクを含むファイルにポリシーを適用しても、リンク先のファイルにポリシーは適用されません。Document Security for Microsoft Office では、リンク先のファイルにまで保護が拡張されません。
 
 * ポリシーで保護された Word、Excel、PowerPoint ファイルは、Internet Explorer ブラウザーウィンドウ内で開くことができません。
 * 変更権限のみを付与されたユーザーは、Windows のクリップボードを使用して、別のアプリケーションの内容をファイルにコピーできません。Microsoft Office クリップボードオプションを有効にすると、内容をファイルにコピーできます。
