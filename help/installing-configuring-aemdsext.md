@@ -6,14 +6,14 @@ content-type: reference
 topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
-source-git-commit: a15d49cdd21ccb8e6ec6c770a92bf16cb24ffaa1
+source-git-commit: 13c487b13acb0d65f02301c881bfade512428bcd
 workflow-type: tm+mt
-source-wordcount: '2796'
-ht-degree: 100%
+source-wordcount: '2764'
+ht-degree: 99%
 
 ---
 
-# AEM Document Security Extension for Microsoft Office のインストールと設定 {#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
+# AEM Document Security Extension for Microsoft Office のインストールと設定{#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
 
 このドキュメントでは、Adobe Experience Manager Document Security Extension for Microsoft Office のインストールおよび設定手順を詳しく説明します。
 
@@ -40,7 +40,7 @@ Document Security Extension for Microsoft Office をインストールする前�
 >
 >64 ビット版のオペレーティングシステムに 32 ビット版の Document Security 拡張機能をインストールすることはできますが、この逆はサポートされていません。つまり、64 ビット版の Document Security Extension for Microsoft Office を 32 ビット版のオペレーティングシステムにインストールすることはできません。
 
-### McAfee VirusScan の無効化 {#disable-mcafee-virusscan}
+### McAfee VirusScan の無効化  {#disable-mcafee-virusscan}
 
 Document Security Extension がインストールされ、McAfee VirusScan の On-Access Scan 機能が有効なコンピューターで Office アプリケーションをスムーズに起動するには、McAfee VirusScan Console の「Buffer Overflow Protection」オプションを無効にしてください。
 
@@ -69,7 +69,7 @@ Document Security Extension のインストールに最低限必要なシステ�
 
 Document Security Extension を使用するには、Adobe LiveCycle Rights Management ES2 以降または AEM 6.0 Forms 以降向けの Document Security アドオンに接続できる必要があります。
 
-## Document Security Extension for Microsoft Office のインストール  {#installing-document-security-extension-for-microsoft-office}
+## Document Security Extension for Microsoft Office のインストール {#installing-document-security-extension-for-microsoft-office}
 
 [ダウンロードページ](download-installer.md)でインストーラーをダウンロードすることができます。インストーラーの実行可能ファイルを直接カスタマイズすることはできませんが、ソフトウェアを対話形式でインストールすることも、サイレントインストールを実行することもできます。ソフトウェアをインストールするには、管理者として Windows にログインします。
 
@@ -103,7 +103,13 @@ MSI ファイルを作成し設定する方法を以下の手順で説明しま�
 
 ### インストーラーをカスタマイズするための前提条件 {#prerequisites-for-customizing-the-installer}
 
-インストーラーをカスタマイズするには、Orca データベースエディターを使用します。次の手順では、Orca データベースエディターで MSI インストールファイルのコピーを変更してカスタム MSI ファイルを作成する方法を説明します。Orca は、Windows SDK for Windows Server 2008 および .NET Framework 3.5 に含まれています。Orca を使用して Microsoft Windows® Installer ファイルを編集する方法については、[Microsoft サポート](http://support.microsoft.com/kb/255905/EN-US/)を参照してください。
+インストーラーをカスタマイズするには、Orca データベースエディターを使用します。次の手順では、Orca データベースエディターで MSI インストールファイルのコピーを変更してカスタム MSI ファイルを作成する方法を説明します。Orcaは、Windows Server 2008および.NET Framework 3.5用のWindows SDKの一部として使用できます。
+
+<!--
+
+For more information about how to edit Microsoft Windows® Installer files using Orca, see [Microsoft Support](http://support.microsoft.com/kb/255905/EN-US/).
+
+-->
 
 >[!NOTE]
 >
@@ -111,7 +117,7 @@ MSI ファイルを作成し設定する方法を以下の手順で説明しま�
 
 #### Orca のインストール {#install-orca}
 
-1. Windows SDK for Windows Server 2008 および .NET Framework 3.5 を [Microsoft ダウンロードセンター](http://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=11310)からダウンロードします。
+1. Windows SDK for Windows Server 2008および.NET Framework 3.5をダウンロードします。
 1. \Microsoft SDK\bin フォルダー内の Orca.msi ファイルをダブルクリックします。
 
    また、インストーラーファイルの MSI バリアントも必要です。アドビサポートに問い合わせて、MSI インストーラーの最新バージョンを入手してください。
@@ -179,7 +185,7 @@ MSI ファイルを作成し設定する方法を以下の手順で説明しま�
 * 保護されていないドキュメントをユーザーが編集して保存する場合
 * ドキュメントをデフォルトの状態で開くアプリケーションをユーザーが起動し、ドキュメントを編集して保存する場合
 
-### MSI ファイルでのポリシー自動適用機能の設定 {#configure-the-auto-apply-policy-feature-in-the-msi-file}
+### MSI ファイルでのポリシー自動適用機能の設定  {#configure-the-auto-apply-policy-feature-in-the-msi-file}
 
 操作を開始する前に、前述のように、LiveCycle サーバーまたは AEM Forms サーバーをポイントするようにインストーラーを事前設定します。
 
@@ -247,7 +253,7 @@ MSI ファイルを作成し設定する方法を以下の手順で説明しま�
 
 ポリシー自動適用の設定については、[デフォルトポリシーの自動適用の設定](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p)を参照してください。
 
-## リボンを使用しないユーザーインターフェイスを有効にする方法  {#enable-ribbon-less-user-interface}
+## リボンを使用しないユーザーインターフェイスを有効にする方法 {#enable-ribbon-less-user-interface}
 
 リボンを使用しないユーザーインターフェイスは、Windows レジストリの設定を変更することで有効／無効にすることができます。レジストリを更新し、リボンを使用しないユーザーインターフェイスを有効にするには、次の手順を実行します。
 
@@ -259,7 +265,7 @@ MSI ファイルを作成し設定する方法を以下の手順で説明しま�
 
 1. レジストリエディターを終了します。
 
-## Microsoft Excel からの印刷時に透かしを付ける方法  {#enable-watermark-for-printing-in-microsoft-excel}
+## Microsoft Excel からの印刷時に透かしを付ける方法 {#enable-watermark-for-printing-in-microsoft-excel}
 
 Windows のレジストリ設定を変更することで、既存のヘッダーとフッターに動的ウォーターマークを共存させることができます。レジストリ設定では、印刷中にのみウォーターマークが有効になります。レジストリを更新し、ウォーターマークも印刷するには、以下の手順を実行します。
 
@@ -278,7 +284,7 @@ Windows のレジストリ設定を変更することで、既存のヘッダー
 
 AEM Document Security for Microsoft Office プラグインがインストールされていない PC 上でも、保護されたドキュメントをユーザーが開こうとする可能性があります。このような PC では、文書を開くことができません。そのような PC では、AEM Document Security for Microsoft Office プラグインのダウンロード方法などの情報を含む表紙を表示させることができます。
 
-### 表紙を構成する前に、以下の事項を実行または確認します。  {#before-you-configure-a-cover-page}
+### 表紙を構成する前に、以下の事項を実行または確認します。 {#before-you-configure-a-cover-page}
 
 * CommonResources.dll ファイルのバックアップを作成する。デフォルトのパス：
 
@@ -330,7 +336,7 @@ CommonResources.dll ファイルには、リソーステンプレートに関す
  </tbody>
 </table>
 
-#### テンプレートをカバーページとして設定する方法  {#configure-the-template-as-a-cover-page}
+#### テンプレートをカバーページとして設定する方法 {#configure-the-template-as-a-cover-page}
 
 1. Microsoft Visual Studio を開きます。CommonResources.dll ファイルを参照して開き、編集します。
 
@@ -357,7 +363,7 @@ CommonResources.dll ファイルには、リソーステンプレートに関す
    >
    >リソースタイプを削除・追加する場合は、順番を維持してください。例えば、101 の後には 102 が来る必要があります。
 
-### AEM Document Security extension for Microsoft Office のインストーラーにカスタム CommonResources.dll ファイルをパッケージ化する方法 {#package-custom-commonresources-dll-file-with-the-installer-of-aem-document-security-extension-for-microsoft-office}
+### AEM Document Security extension for Microsoft Office のインストーラーにカスタム CommonResources.dll ファイルをパッケージ化する方法   {#package-custom-commonresources-dll-file-with-the-installer-of-aem-document-security-extension-for-microsoft-office}
 
 CommonResources.dll ファイルをカスタマイズすることで、カスタムの表紙を追加することができます。ファイルをカスタマイズした後は、すべてのワークステーション上で元のファイルを手動でカスタムファイルに置き換えるか、あるいは自動化された方法でファイルを置き換えることができます。
 
