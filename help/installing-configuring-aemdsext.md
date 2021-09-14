@@ -7,9 +7,9 @@ topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
 source-git-commit: 13c487b13acb0d65f02301c881bfade512428bcd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2764'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -103,7 +103,7 @@ MSI ファイルを作成し設定する方法を以下の手順で説明しま�
 
 ### インストーラーをカスタマイズするための前提条件 {#prerequisites-for-customizing-the-installer}
 
-インストーラーをカスタマイズするには、Orca データベースエディターを使用します。次の手順では、Orca データベースエディターで MSI インストールファイルのコピーを変更してカスタム MSI ファイルを作成する方法を説明します。Orcaは、Windows Server 2008および.NET Framework 3.5用のWindows SDKの一部として使用できます。
+インストーラーをカスタマイズするには、Orca データベースエディターを使用します。次の手順では、Orca データベースエディターで MSI インストールファイルのコピーを変更してカスタム MSI ファイルを作成する方法を説明します。Orca は、Windows SDK for Windows Server 2008 および .NET Framework 3.5 の一部として使用できます。
 
 <!--
 
@@ -117,7 +117,7 @@ For more information about how to edit Microsoft Windows® Installer files using
 
 #### Orca のインストール {#install-orca}
 
-1. Windows SDK for Windows Server 2008および.NET Framework 3.5をダウンロードします。
+1. Windows SDK for Windows Server 2008 および .NET Framework 3.5 をダウンロードします。
 1. \Microsoft SDK\bin フォルダー内の Orca.msi ファイルをダブルクリックします。
 
    また、インストーラーファイルの MSI バリアントも必要です。アドビサポートに問い合わせて、MSI インストーラーの最新バージョンを入手してください。
@@ -269,7 +269,7 @@ For more information about how to edit Microsoft Windows® Installer files using
 
 Windows のレジストリ設定を変更することで、既存のヘッダーとフッターに動的ウォーターマークを共存させることができます。レジストリ設定では、印刷中にのみウォーターマークが有効になります。レジストリを更新し、ウォーターマークも印刷するには、以下の手順を実行します。
 
-1. Windows レジストリを変更する前に、バックアップを作成してください。詳しい手順については、[Windows レジストリを変更する方法](https://support.microsoft.com/en-us/kb/136393)を参照してください。
+1. Windows レジストリを変更する前に、バックアップを作成してください。詳しい手順については、[Windows レジストリを変更する方法](https://support.microsoft.com/ja-jp/kb/136393)を参照してください。
 1. レジストリエディタで、HKEY_CURRENT_USER\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 または HKEY_LOCAL_MACHINE\WOW6432NODE\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 を開きます。
 1. 新しいレジストリキー **WatermarkMode** を作成します。
 1. WatermarkModeレジストリキーで、**WatermarkMode** の DWORD を作成し、**WatermarkMode** の DWORD 値を「**1**」に設定します。
