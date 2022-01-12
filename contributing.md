@@ -1,13 +1,13 @@
 ---
 source-git-commit: 3687bd5e276bd3445d12fb19d911f6a9ded1077d
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '538'
+ht-degree: 100%
 
 ---
 # AEM Document Security Extension for Microsoft Office ドキュメントへの投稿
 
-AEM Document Security Extension for Microsoft Office ドキュメントへの投稿にご協力いただきありがとうございます。 アドビの読者コミュニティ全体およびアドビ従業員によるコンテンツ投稿を歓迎します。
+AEM Document Security Extension for Microsoft Office ドキュメントへの投稿にご協力いただきありがとうございます。アドビの読者コミュニティ全体およびアドビ従業員によるコンテンツ投稿を歓迎します。
 
 このファイルでは、投稿方法と、投稿時のガイドラインを説明します。
 
