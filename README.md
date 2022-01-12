@@ -1,13 +1,13 @@
 ---
 source-git-commit: 1bc44195024fc4679c7730fa9c7b309c84c55605
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '79'
+ht-degree: 100%
 
 ---
 # AEM Document Security Extension for Microsoft Office ドキュメント
 
-これは、AEM Document Security Extension for Microsoft Office Documentation のリポジトリです。
+これは、AEM Document Security Extension for Microsoft Office ドキュメントのリポジトリーです。
 
 ドキュメントへの投稿を歓迎します。次のリソースを参照してください。
 
