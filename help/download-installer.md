@@ -1,6 +1,6 @@
 ---
-title: Microsoft&reg；用Adobe Experience Manager Document Security/LiveCycleRights Management拡張をダウンロードオフィス
-description: Microsoft&reg；用の Document Security Extension を使用不正なアクセスから重要なファイルを保護するオフィスソフトウェア
+title: Adobe Experience Manager Document Security／LiveCycle Rights Management Extension for Microsoft® Office のダウンロード
+description: Document Security Extension for Microsoft® Office ソフトウェアを使用して、重要なファイルを不正アクセスから保護する
 uuid: b4c7d1d1-7eae-4fd3-8282-132c80a976e8
 contentOwner: khsingh
 discoiquuid: b32c7bb8-0060-4c2a-90fc-446b6ba39159
@@ -8,13 +8,13 @@ exl-id: 25d2f439-e6c9-4d0a-bbd1-91d0f00dc683
 source-git-commit: f3456fa7243405a4986ac50540f8b578a6412a6c
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 21%
+ht-degree: 93%
 
 ---
 
-# Microsoft® Office 用Adobe Experience Manager Document Security/LiveCycleRights Management拡張機能をダウンロード {#download-adobe-experience-manager-document-security-livecycle-rights-management-extension-for-microsoft-office}
+# Adobe Experience Manager Document Security／LiveCycle Rights Management Extension for Microsoft® Office のダウンロード {#download-adobe-experience-manager-document-security-livecycle-rights-management-extension-for-microsoft-office}
 
-Microsoft® Office 用 Document Security Extension を使用すると、ファイルの配布方法や保存場所に関係なく、ドキュメントの作成から配布、アーカイブ、破棄まで、重要なファイルを常に不正アクセスから保護し、機密情報の機密性を維持できます。
+Document Security Extension for Microsoft® Office ソフトウェアは、重要なファイルへの不正アクセスを常に防止することにより、機密情報の機密性を保持します。ファイルの配布方法や保存場所を問わず、ドキュメントの作成から配布、アーカイブ、破棄に至るまで、情報を継続的に保護します。
 
 >[!NOTE]
 >
@@ -22,12 +22,12 @@ Microsoft® Office 用 Document Security Extension を使用すると、ファ�
 
 ## 必要システム構成 {#system-requirements}
 
-* Microsoft® Windows 7 または Windows 10 の 32 ビット版または 64 ビット版
-* 注意：Microsoft® Office の Document Security 拡張機能は、Microsoft® Surface デバイスでも動作すると想定されます。
-* 32 ビット版または 64 ビット版のMicrosoft® Office 2013、2016、2019、またはMicrosoft® Office デスクトップアプリケーションが Office 365 の一部としてインストールされている
-* 1.3 GHz 以上のプロセッサー
+* 32 ビット版または 64 ビット版の Microsoft® Windows 7 または Windows 10
+* メモ：Document Security Extension for Microsoft® Office も Microsoft® Surface シリーズのデバイスで動作すると想定されています。
+* 32 ビット版または 64 ビット版の Microsoft® Office 2013、2016、2019 のほか、Office 365 の一部としてインストールされた Microsoft® Office デスクトップアプリケーション
+* 1.3 GHz 以上のプロセッサ
 * 2 GB の RAM
-* 100 MB のハードディスク容量
+* 100 MB の空きハードディスク容量
 
 ## インストーラーのダウンロード {#download-installer}
 
