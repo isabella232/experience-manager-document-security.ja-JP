@@ -1,15 +1,15 @@
 ---
 title: Microsoft Office® 用 AEM Document Security 拡張機能を使用する
-description: ポリシーで保護されたファイルをどれだけ広く配布しても、受信者によるファイルの使用方法を制御できます。 このドキュメントでは、ファイルの保護方法と、保護されたファイルの操作方法について説明します。
+description: 広範囲にファイルを配布する場合でも、ポリシーで保護されたファイルを受信者が使用する方法を制御できます。この文書では、ファイルの保護方法および保護ファイルの使用方法について説明します。
 uuid: db4abbc8-eb21-4f4a-9950-224ada95ce66
 content-type: reference
 topic-tags: using
 discoiquuid: f4c2460c-174f-4e4d-b804-1eb051d2781e
 exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
 source-git-commit: 28137f26afc024d411857d44887bf69fe1ee2b81
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6231'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 89%
 
 ## AEM Document Security Extension を使用したファイルの保護 {#usingaemdocumentsecurityextensiontoprotectfiles}
 
-ポリシーで保護されたファイルをどれだけ広く配布しても、受信者によるファイルの使用方法を制御できます。
+広範囲にファイルを配布する場合でも、ポリシーで保護されたファイルを受信者が使用する方法を制御できます。
 
 Microsoft Office® 用 Document Security 拡張機能を使用すると、次のタスクを実行できます。
 
@@ -87,24 +87,24 @@ Document Security に接続できない場合は、「ユーザー名とパス�
 
 ### サードパーティ認証プロバイダーの使用 {#using-third-party-authentication-providers}
 
-AEM Forms Document Security で、サードパーティ認証プロバイダーを使用できるようになりました。これらの認証プロバイダーにより、保護されたドキュメントにアクセスレイヤーを追加できます。AEM Forms Document Security は、次の拡張認証ワークフローをサポートしています。
+AEM Forms Document Security で、サードパーティ認証プロバイダーを使用できるようになりました。これらの認証プロバイダーにより、保護されたドキュメントにアクセスレイヤーを追加できます。AEM Forms Document Security は、以下の拡張認証ワークフローをサポートします。
 
-* デフォルトのAEM Forms URL を使用した拡張認証
+* AEM Forms のデフォルト URL を使用した拡張認証
 * カスタム URL を使用した拡張認証
 * AEM Forms on JEE サーバーに設定されたサードパーティ ID プロバイダーによる、デフォルトの拡張認証ワークフロー
 * AEM Forms on JEE サーバーに設定されたサードパーティ ID プロバイダーによる、カスタム拡張認証ワークフロー
-* SAML 認証の一覧表示にカスタマイズされたページを使用した拡張認証
+* SAML 認証をリスト表示するカスタムページを使用した拡張認証
 
-#### デフォルトのAEM Forms URL を使用した拡張認証 {#extended-authentication-using-default-aem-forms-url}
+#### AEM Forms のデフォルト URL を使用した拡張認証 {#extended-authentication-using-default-aem-forms-url}
 
-拡張認証には、デフォルトのAEM Forms URL を使用できます。 デフォルトのランディングページには、Adobeのブランディングが含まれます。 また、デフォルトのAEM Forms設定は、拡張認証にデフォルトのAEM Forms URL を使用する場合に使用されます。
+AEM Forms のデフォルト URL を使用して拡張認証を実行できます。デフォルトランディングページには Adobe ブランドが表示されます。また、AEM Forms のデフォルト URL を使用して拡張認証を実行する場合は、デフォルトの AEM Forms 設定が使用されます。
 
-次の手順を実行して、デフォルトの認証ランディング URL を使用した拡張Adobeを有効にします。
+デフォルトランディングページ URL を使用した拡張認証を有効にするには、次の手順を実行します。
 
-1. AEM Forms Admin UI を開きます。
-1. サービス/Document Security/設定/サーバー設定に移動します。
+1. AEM Forms の管理 UI を開きます。
+1. サービス／Document Security／設定／サーバー設定に移動します。
 1. 「拡張認証を許可」オプションを有効にします。
-1. デフォルトの URL 拡張認証ランディング URL を指定します。 デフォルトの URL はhttp://localhost:8080/edc/extendedauthentication/welcome.jspです。
+1. デフォルト拡張認証ランディングページ URL を指定します。デフォルト URL は http://localhost:8080/edc/extendedauthentication/welcome.jsp です。
 
    「**[!UICONTROL 保存]**」をクリックします。
 
@@ -117,27 +117,27 @@ AEM Forms Document Security で、サードパーティ認証プロバイダー�
 
 #### カスタムランディングページ URL を使用した拡張認証 {#extended-authentication-with-a-custom-landing-url}
 
-拡張認証にはカスタム URL を使用できます。 カスタム認証ページをカスタムブランディングで柔軟に表示できます。 例えば、組織のブランディングなどです。
+カスタム URL を使用した拡張認証を実行できます。これにより、カスタム認証ページにカスタムブランド（組織のブランドなど）を表示できます。
 
-カスタム認証ページを war ファイルにパッケージ化し、その war ファイルを AEM Forms サーバーにデプロイできます。war ファイルにはユーザー資格情報を受け入れ、AEM Forms サーバーに対して認証を行うための完全なロジックが含まれています。AEM Forms Document Security には、カスタム認証ページに関する次の要件があります。
+カスタム認証ページを war ファイルにパッケージ化し、その war ファイルを AEM Forms サーバーにデプロイできます。war ファイルにはユーザー資格情報を受け入れ、AEM Forms サーバーに対して認証を行うための完全なロジックが含まれています。AEM Forms Document Security のカスタム認証ページには次の要件があります。
 
-* 認証ページでは、ユーザー名を j_username、パスワードを j_password として送信する必要があります。 また、このページでは、 source_url と login_url を非表示のパラメーターとして送信する必要があります。
-* 認証に成功した場合、ページは自動的に閉じます。
+* ユーザー名とパスワードはそれぞれ j_username 形式および j_password 形式で認証ページから送信される必要があります。また、source_url と login_url を非表示パラメーターとして送信する必要もあります。
+* 認証に成功した場合、ページは自動的に閉じる必要があります。
 
 カスタムランディング URL を使用した拡張認証を有効にするには、次の手順を実行します。
 
 1. カスタムの認証 war ファイルを AEM Forms サーバーにデプロイします。
-1. AEM Forms Admin UI を開きます。
-1. サービス/Document Security/設定/サーバー設定に移動します。
-1. 「拡張認証を許可」オプションを有効にして、カスタムの拡張認証ランディング URL を指定します。
+1. AEM Forms の管理 UI を開きます。
+1. サービス／Document Security／設定／サーバー設定に移動します。
+1. 「拡張認証を許可」オプションを有効にし、カスタム拡張認証ランディングページ URL を指定します。
 1. エントリ *&lt;node name=&quot;AllowedUrls&quot;>* の後に、SSO ノードの下の config.xml ファイルに次のエントリを追加します。
 
    >[!NOTE]
    &lt;entry key=&quot;sso-l&quot; value=&quot;/ sample_/login.jsp&quot;/>!!discoiqbr!! &lt;entry key=&quot;sso-s&quot; value=&quot;/ sample_/welcome.jsp&quot;>!!discoiqbr!! &lt;entry key=&quot;sso-o&quot; value=&quot;/ sample_/logout.jsp&quot;/>!!discoiqbr!!
 
-   config.xml ファイルの更新手順について詳しくは、 [Document Security 設定ファイルの手動編集](https://helpx.adobe.com/jp/aem-forms/6-3/admin-help/configuring-client-server-options.html#manually_editing_the_document_security_configuration_file).
+   config.xml ファイルを更新する手順について詳しくは、[Document Security 設定ファイルの手動による編集](https://helpx.adobe.com/jp/aem-forms/6-3/admin-help/configuring-client-server-options.html#manually_editing_the_document_security_configuration_file)を参照してください。
 
-   AEM Forms Document Security は、カスタムランディング URL で拡張認証を使用するように設定されました
+   これで、カスタムランディングページ URL を使用して拡張認証を実行するように AEM Forms Document Security が設定されました
 
 #### AEM Forms Server で設定されたサードパーティ ID プロバイダーを使用した、デフォルトの拡張認証ワークフロー {#default-extended-authentication-workflow-with-third-party-identity-providers-configured-on-aem-forms-server}
 
@@ -162,7 +162,7 @@ AEM Forms サーバーで設定されたすべての認証プロバイダーが�
 
 1. カスタム認証ページを war ファイルにパッケージ化し、その war ファイルを AEM Forms サーバーにデプロイします。war ファイルにはユーザー資格情報を受け入れ、AEM Forms サーバーに対して認証を行うための完全なロジックが含まれています。
 1. AEM Forms の管理 UI を開き、**[!UICONTROL 設定]**／**[!UICONTROL User Management]**／**[!UICONTROL 設定]**／**[!UICONTROL SAML サービスプロバイダーの設定]**&#x200B;に移動します。
-1. 「カスタムプロパティ」フィールドに以下を追加し、 **[!UICONTROL 保存]**.
+1. 次のプロパティを「カスタムプロパティ」フィールドに追加し、「**[!UICONTROL 保存]**」をクリックします。
 
    *saml.sp.discovery.url=/demoJSP/saml_discovery.jsp*
 
@@ -180,13 +180,13 @@ Document Security アカウントがない場合、次のイベントが発生�
 >[!NOTE]
 ポリシーで保護されたファイルを受け取っても Document Security アカウントがない場合や、登録の招待を受けていない場合は、ファイルの送信者にお問い合わせください。
 
-Document Security からメールで登録の招待を受けた場合、そのメールに記載された URL を使用してオンライン登録ページを開いて登録できます。登録後、アカウントのアクティベートに関する 2 回目の通知が届きます。
+Document Security からメールで登録の招待を受けた場合、そのメールに記載された URL を使用してオンライン登録ページを開いて登録できます。登録後、アカウントのアクティベートに関する通知を受信します。
 
 #### 外部ユーザーアカウントの取得 {#obtain-an-external-user-account}
 
 1. Document Security 登録メールを開きます。メッセージに含まれている URL は、Document Security の外部ユーザー登録ページへのリンクです。登録メッセージを受信していない場合は、ファイルの送信者にお問い合わせください。
-1. URL をクリックするか、URL をコピーしてブラウザーに貼り付けます。
-1. 該当するボックスに、自分の名前、組織およびパスワードを入力します。パスワードは、8 文字の任意の組み合わせで指定できます。
+1. URL をクリックするか、ブラウザーにコピー＆ペーストします。
+1. 該当するボックスに、自分の名前、組織およびパスワードを入力します。パスワードには、任意の 8 文字のテキストを使用できます。
 
    >[!NOTE]
    覚えやすいパスワードを選んでください。パスワードを忘れた場合に確認する方法はありません。
@@ -281,7 +281,7 @@ Document Security Web ページでポリシーの作成に使用できるポリ�
    <td><p>サポート対象。</p></td>
   </tr>
   <tr>
-   <td><p>外部認証プロバイダ</p></td>
+   <td><p>外部認証プロバイダー</p></td>
    <td><p>サポート対象。</p></td>
   </tr>
  </tbody>
@@ -324,7 +324,7 @@ Document Security Web ページでポリシーの作成に使用できるポリ�
 
 自分で作成したポリシーやアクセス可能なポリシーセットに含まれているポリシーなど、使用可能なあらゆるポリシーをファイルに適用できますポリシーを適用する前に、ファイルを保存する必要があります。
 
-ポリシーを適用すると、AEM Document Security メニューの「最近使用したポリシー」リストに追加され、最も頻繁に使用するポリシーを簡単に適用できます。 Document Security の複数のインスタンスを使用する場合、最近使用したリストには、現在接続しているサーバーのみ、または Document Security のインスタンスにまだログインしていない場合はデフォルトサーバーのポリシーが表示されます。
+適用したポリシーは AEM Document Security メニューの「最近使用した項目」リストに追加されるため、頻繁に使用するポリシーを適用しやすくなります。Document Security の複数のインスタンスを使用する場合、「最近使用した項目」リストには、現在接続しているサーバーのポリシーのみが表示されます。または、Document Security のインスタンスにログインしていない場合はデフォルトサーバーのポリシーのみが表示されます。
 
 >[!NOTE]
 ポリシーは、Word ドキュメントファイル（.doc、Microsoft® Office 2010 および 2013 では .docx と .docm）、Excel ワークブックファイル（.xls、Microsoft® Office 2010 および 2013 では .xlsx と .xlsm）および PowerPoint プレゼンテーションファイル（.ppt、Microsoft® Office 2010 および 2013 では .pptx と .pptm）にのみ適用できます。Word テンプレートファイル（.dot）、Excel テンプレートファイル（.xlt）、PowerPoint デザインテンプレートファイル（.pot）にはポリシーを適用できません。
@@ -347,7 +347,7 @@ Document Security Web ページでポリシーの作成に使用できるポリ�
 
 ポリシーで保護されたファイルには、ファイルの発行者が所有し Document Security で保護される知的財産が含まれています。
 
-ファイル発行者の組織の内部または外部に関係なく、ポリシーで保護されたファイルを使用できます。ポリシーで保護されたファイルを開くには、LDAP または Active Directory のリストへの追加、JEE 上のAEM forms のローカルユーザーとしての追加、またはユーザーとして招待された後の Document Security への登録を通じて、Document Security によって認識される必要があります。
+ファイル発行者の組織の内部または外部に関係なく、ポリシーで保護されたファイルを使用できます。ポリシーで保護されたファイルを開くには、リンクされている LDAP または Active Directory リストに含めるか、LiveCycle または AEM forms on JEE のローカルユーザーとして追加するか、ユーザーとして招待を受けてから Document Security に登録することで、Document Security から認識される必要があります。
 
 ポリシーで保護されたファイルを受け取っても Document Security アカウントがない場合や、登録の招待を受けていない場合は、ファイルの送信者にお問い合わせください。
 
@@ -364,11 +364,11 @@ Document Security Extension 対応の Office アプリケーションを使用�
 
 ### ポリシーで保護されたファイルを開く {#opening-policy-protected-files}
 
-ポリシーで保護されたファイルを開くには、他のファイルを開くのと同じ方法を使用します。 Document Security にログインしていない場合は、インターネットに接続せずにファイルをオフラインで開くことができる場合を除き、ログインが求められます。ログイン処理をキャンセルすると、アクセスは拒否されます。
+他のファイルを開くときと同様の方法を使用して、ポリシーで保護されたファイルを開くことができます。Document Security にログインしていない場合は、インターネットに接続せずにファイルをオフラインで開くことができる場合を除き、ログインが求められます。ログイン処理をキャンセルすると、アクセスは拒否されます。
 
 ファイルを開く権限がない場合は、アクセスが拒否されたことが通知されます。また、ファイルのアクセス権限が失効した場合、更新版のファイルがあれば、そのファイルにアクセスすることもできます。ポリシーで保護されたファイルを開くことができない場合、対応方法についてはファイルの発行者にお問い合わせください。
 
-保護されたファイルを開くと、ファイル名に続くタイトルバーのテキストに、そのファイルがAEM Document Security によって保護されていることが示されます。
+保護されたファイルを開くと、タイトルバーのファイル名の後に、ファイルが AEM Document Security で保護されていることを示すテキストが表示されます。
 
 Microsoft Office® 用 Document Security 拡張機能で保護されたドキュメントを SharePoint Server から開く場合、そのファイルタイプに関連付けられた Microsoft® Office プログラム（Microsoft® Word、Microsoft® Excel、Microsoft® PowerPoint など）が開いていることを確認します。関連するアプリケーションを開かずにファイルを開こうとしても、ドキュメントが開かず、該当するプラグインをインストールする必要があるというエラーメッセージが表示されます。必要なアプリケーションを開くほかに、キャッシュフォルダーを空にしてから、Microsoft Office® 用 Document Security 拡張機能で保護されたドキュメントを SharePoint Server から開くことをお勧めします。また、保護されたドキュメントを SharePoint Server から開くと、適用されたポリシーに関係なく、ドキュメントのすべての権限が無効になります。
 
@@ -378,7 +378,7 @@ Document Security に実装されている認証方法によっては、保護�
 
 ### ファイルからのポリシー保護の削除 {#removing-policy-protection-from-a-file}
 
-許可されている場合は、保護したファイルからポリシー保護を削除できます。 保護を削除すると、ファイルは Document Security で保護されなくなります。
+権限が付与されている場合、自身が保護したファイルからポリシー保護を削除できます。保護を削除すると、ファイルは Document Security で保護されなくなります。
 
 1. Microsoft Office® 2010 および Office 2013 用 Document Security 拡張機能で、「**Document Security**」タブの「**削除**」を選択します。
 
@@ -389,7 +389,7 @@ Document Security に実装されている認証方法によっては、保護�
 
 ### セキュリティ設定の表示 {#viewing-security-settings}
 
-印刷、コピー、変更、オフラインアクセスのための現在のファイルに対する権限と、ファイルの有効期間を表示できます。
+印刷、コピー、変更、オフラインでのアクセスおよびファイルの有効期間について、現在のファイルに設定された権限を表示できます。
 
 Microsoft Office® 2010 用 Document Security 拡張機能では、「Document Security」タブの「セキュリティのステータス」グループに、ファイルの権限が表示されます。
 
@@ -422,7 +422,7 @@ Microsoft Office® 用 Document Security 拡張機能では、ポリシーで保
 
 Document Security Extension では、PDF ベースの透かし、透かし内の複数の要素、テキストの書式設定オプション、ページ範囲などの拡張透かし機能はサポートしていません。
 
-動的な透かしは、Document Security Web ページを使用して作成します。 動的な透かしを作成して、ポリシーで保護されたドキュメントに含める方法について詳しくは、[Document Security エンドユーザーガイド](https://www.adobe.com/go/learn_lc_euRightsMgmt_11_jp)を参照してください。
+動的な透かしの作成には、Document Security web ページを使用します。動的な透かしを作成して、ポリシーで保護されたドキュメントに含める方法について詳しくは、[Document Security エンドユーザーガイド](https://www.adobe.com/go/learn_lc_euRightsMgmt_11_jp)を参照してください。
 
 Microsoft Office® 用 Document Security 拡張機能では、次のような透かし機能をサポートしています。
 
@@ -452,7 +452,7 @@ Microsoft Office® 用 Document Security 拡張機能では、次のような透
   </tr>
   <tr>
    <td><p>水平位置</p></td>
-   <td><p>サポート対象</p><p>Excel 2010 および 2013 では、ポイントを使用した透かしの水平位置は機能しません。</p></td>
+   <td><p>サポート対象</p><p>Excel 2010 および 2013 の場合、ポイントを使用した透かしの水平位置は機能しません。</p></td>
   </tr>
   <tr>
    <td><p>倍率</p></td>
@@ -501,7 +501,7 @@ Document Security 管理者またはファイル発行者の権限を持って�
 
 ファイルアクセス権限の取り消しについて詳しくは、[Document Security エンドユーザーガイド](https://help.adobe.com/en_US/AEMForms/6.1/RMHelp/)を参照してください。
 
-アクセス権限は、Document Security Web ページを使用して復元できます。
+アクセス権限は、Document Security web ページで元に戻すことができます。
 
 ### ファイル監査履歴の表示 {#viewing-the-file-audit-history}
 
@@ -759,13 +759,13 @@ Document Security web ページのイベントページが開き、現在のフ�
 
 ## サードパーティ認証プロバイダーの使用 {#use-third-party-authentication-providers}
 
-AEM Forms Document Security で、サードパーティ認証プロバイダーを使用できるようになりました。これらの認証プロバイダーにより、保護されたドキュメントにアクセスレイヤーを追加できます。AEM Forms Document Security は、次の拡張認証ワークフローをサポートしています。
+AEM Forms Document Security で、サードパーティ認証プロバイダーを使用できるようになりました。これらの認証プロバイダーにより、保護されたドキュメントにアクセスレイヤーを追加できます。AEM Forms Document Security は、以下の拡張認証ワークフローをサポートします。
 
-* デフォルトのAEM Forms URL を使用した拡張認証
+* AEM Forms のデフォルト URL を使用した拡張認証
 * カスタム URL を使用した拡張認証
 * AEM Forms on JEE サーバーに設定されたサードパーティ ID プロバイダーによる、デフォルトの拡張認証ワークフロー
 * AEM Forms on JEE サーバーに設定されたサードパーティ ID プロバイダーによる、カスタム拡張認証ワークフロー
-* SAML 認証の一覧表示にカスタマイズされたページを使用した拡張認証
+* SAML 認証をリスト表示するカスタムページを使用した拡張認証
 
 ## 用語集 {#glossary}
 
