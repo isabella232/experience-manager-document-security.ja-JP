@@ -6,9 +6,9 @@ contentOwner: khsingh
 discoiquuid: b32c7bb8-0060-4c2a-90fc-446b6ba39159
 exl-id: 25d2f439-e6c9-4d0a-bbd1-91d0f00dc683
 source-git-commit: 28137f26afc024d411857d44887bf69fe1ee2b81
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '208'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,9 +25,9 @@ Document Security Extension for Microsoft® Office ソフトウェアは、重�
 * 32 ビット版または 64 ビット版の Microsoft® Windows 7 または Windows 10
 * メモ：Document Security Extension for Microsoft® Office も Microsoft® Surface シリーズのデバイスで動作すると想定されています。
 * 32 ビット版または 64 ビット版の Microsoft® Office 2013、2016、2019 のほか、Office 365 の一部としてインストールされた Microsoft® Office デスクトップアプリケーション
-* 1.3 GHz 以上のプロセッサ
+* 1.3 GHz 以上のプロセッサー
 * 2 GB の RAM
-* 100 MB の空きハードディスク容量
+* 100 MB のハードディスク容量
 
 ## インストーラーのダウンロード {#download-installer}
 
