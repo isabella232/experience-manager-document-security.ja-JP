@@ -7,9 +7,9 @@ topic-tags: using
 discoiquuid: cf93f9f5-1fb6-4909-815e-0ffb8c6ea6d1
 exl-id: 3e07c031-3f88-4bde-bdb3-b136ef5f9527
 source-git-commit: 28137f26afc024d411857d44887bf69fe1ee2b81
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1313'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Microsoft® Office 用 Document Security 拡張機能は LiveCycle Rights Manage
 
 ## Document Security による知的財産の保護の仕組み {#how-document-security-protects-intellectual-property}
 
-ドキュメントセキュリティにより、許可されたユーザーだけが、知的財産を含んだファイルを使用できるようになります。Document Security を利用すると、機密ポリシーを使用してファイルを保護できます。A *ポリシー* は、機密設定と許可されたユーザーのリストを含む情報の集まりです。 ポリシーを適用したファイルを受信者がどのように使用できるかは、ポリシーで指定した設定で決まります。例えば、受信者がテキストの印刷やコピー、変更内容の保存を行えるかどうかを指定できます。
+ドキュメントセキュリティにより、許可されたユーザーだけが、知的財産を含んだファイルを使用できるようになります。Document Security を利用すると、機密ポリシーを使用してファイルを保護できます。*ポリシー*&#x200B;は、機密設定と、許可されたユーザーの一覧を含む、情報のコレクションです。ポリシーを適用したファイルを受信者がどのように使用できるかは、ポリシーで指定した設定で決まります。例えば、受信者がテキストの印刷やコピー、変更内容の保存を行えるかどうかを指定できます。
 
 ポリシーを作成するのは Document Security 管理者およびユーザーです。管理者は、許可されたすべてのユーザーが使用できる組織ポリシーを作成します。管理者またはポリシー設定コーディネータは、ユーザーのサブセットで使用できる&#x200B;*ポリシーセット*&#x200B;と呼ばれるポリシーグループを作成することもできます。ユーザーは自分だけが使える独自のポリシーを作成できます。管理者、ポリシー設定コーディネータ、ユーザーは、Document Security Web ページを使用してポリシーを作成します。
 
@@ -31,7 +31,7 @@ Microsoft® Office 用 Document Security 拡張機能は LiveCycle Rights Manage
 
 ## ポリシーの仕組み {#how-policies-work}
 
-ポリシーには、許可されたユーザーに関する情報と、知的財産に適用する機密設定が含まれます。 リンクされた LDAP または Active Directory リストに含まれることで Document Security に認識される人であれば誰でもユーザーになれます。また、Document Security への登録を招待された人や、管理者がアカウントを作成した人もユーザーになれます。
+ポリシーは、許可されたユーザーおよび知的財産に適用される機密設定に関する情報で構成されます。リンクされた LDAP または Active Directory リストに含まれることで Document Security に認識される人であれば誰でもユーザーになれます。また、Document Security への登録を招待された人や、管理者がアカウントを作成した人もユーザーになれます。
 
 ポリシーで保護されたファイルを受信者がどのように使用できるかは、ポリシーの機密設定で決まります。ポリシーでは、例えば、受信者がファイルを印刷したり、内容を他のファイルにコピーしたり、保護されたファイルに変更内容を保存したりできるかどうかを指定します。また、様々なユーザーに応じて異なる機密設定を指定することもできます。
 
@@ -41,7 +41,7 @@ Microsoft® Office 用 Document Security 拡張機能は LiveCycle Rights Manage
 
 オフラインアクセスがポリシーで許可されている場合、受信者は、ポリシーで保護されたファイルを、ポリシーで指定された期間、オフライン（アクティブなインターネット接続やネットワーク接続がない状態）で使用することもできます。
 
-## ポリシーで保護されたファイルの動作 {#how-policy-protected-files-work}
+## ポリシーで保護されたファイルの仕組み {#how-policy-protected-files-work}
 
 ポリシーで保護された Word、Excel および PowerPoint ファイルを開き、使用できるようにするには、該当するユーザーが受信者としてポリシーに含まれているか、匿名アクセスが許可されていて、Microsoft® Office 用 Document Security 拡張機能がインストールされている必要があります。Microsoft® Office 用 Document Security 拡張機能ソフトウェアを持っていないユーザーに、ポリシーで保護されたファイルを渡す場合は、ソフトウェアのコピーを渡すか、web サイトからソフトウェアをダウンロードする方法を教えてください。インストーラーがない場合は、[ダウンロードページ](https://experienceleague.adobe.com/docs/experience-manager-document-security/using/download-installer.html?lang=ja)からダウンロードできます。
 
@@ -68,20 +68,20 @@ Microsoft® Office 用 Document Security 拡張機能は LiveCycle Rights Manage
 
 ## 追加情報 {#additional-information}
 
-次の表に示すリソースは、AEM Document Security の詳細について説明しています。
+次の表に、AEM Document Security の参考情報を記載します。
 
 <table >
  <tbody>
   <tr>
-   <th><p>詳しくは、</p> </th>
+   <th><p>情報</p> </th>
    <th><p>参照先</p> </th>
   </tr>
   <tr>
-   <td><p>AEM forms 管理者ヘルプ</p> </td>
+   <td><p>AEM Forms 管理者ヘルプ</p> </td>
    <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/get-started/configure-general-aem-forms-settings.html?lang=ja">管理ヘルプ</a>または Document Security 管理ページで、ページの右上にある「ヘルプ」リンクをクリックしてください。</p> </td>
   </tr>
   <tr>
-   <td><p>この製品バージョンに関するパッチアップデート、テクニカルノート、および追加情報</p> </td>
+   <td><p>現在のバージョンに関するパッチアップデート、テクニカルノート、および追加情報</p> </td>
    <td><p><a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home&amp;lang=ja#support">Experience Cloud のテクニカルサポート</a></p> </td>
   </tr>
  </tbody>
