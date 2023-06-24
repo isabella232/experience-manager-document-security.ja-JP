@@ -75,7 +75,7 @@ Document Security サーバーで証明書ベースの認証を使用する場�
 >サーバーに接続できない場合は、Document Security Web ページを Internet Explorer で開いてみてください。Internet Explorer でもサーバーに接続できない場合や、サーバーの証明書に関する警告がダイアログボックスに表示される場合、Microsoft Office® 用 Document Security 拡張機能はサーバーに接続できません。サーバー管理者に問い合わせてください。
 
 >[!NOTE]
-Document Security に接続できない場合は、「ユーザー名とパスワードが正しくありません。設定を確認して再試行してください」という内容のメッセージが表示されます。このメッセージは、別の理由で接続できない場合にも表示されることがあります。サーバーに初めて接続する場合は、サーバー名とポートが正しく設定されていることを確認します。
+>Document Security に接続できない場合は、「ユーザー名とパスワードが正しくありません。設定を確認して再試行してください」という内容のメッセージが表示されます。このメッセージは、別の理由で接続できない場合にも表示されることがあります。サーバーに初めて接続する場合は、サーバー名とポートが正しく設定されていることを確認します。
 
 #### デフォルトサーバーの指定 {#specify-the-default-server}
 
@@ -109,7 +109,7 @@ AEM Forms のデフォルト URL を使用して拡張認証を実行できま�
    「**[!UICONTROL 保存]**」をクリックします。
 
    >[!NOTE]
-   URL には完全修飾ホスト名を使用します。HTTPS プロトコルを使用することをお勧めします。
+   >URL には完全修飾ホスト名を使用します。HTTPS プロトコルを使用することをお勧めします。
 
    これで、デフォルト AEM Forms ランディングページ URL を使用した拡張認証を実行するように AEM Forms Document Security が設定されました。
 
@@ -133,7 +133,7 @@ AEM Forms のデフォルト URL を使用して拡張認証を実行できま�
 1. エントリ *&lt;node name=&quot;AllowedUrls&quot;>* の後に、SSO ノードの下の config.xml ファイルに次のエントリを追加します。
 
    >[!NOTE]
-   &lt;entry key=&quot;sso-l&quot; value=&quot;/ sample_/login.jsp&quot;/>!!discoiqbr!! &lt;entry key=&quot;sso-s&quot; value=&quot;/ sample_/welcome.jsp&quot;>!!discoiqbr!! &lt;entry key=&quot;sso-o&quot; value=&quot;/ sample_/logout.jsp&quot;/>!!discoiqbr!!
+   >&lt;entry key=&quot;sso-l&quot; value=&quot;/ sample_/login.jsp&quot;/>!!discoiqbr!! &lt;entry key=&quot;sso-s&quot; value=&quot;/ sample_/welcome.jsp&quot;>!!discoiqbr!! &lt;entry key=&quot;sso-o&quot; value=&quot;/ sample_/logout.jsp&quot;/>!!discoiqbr!!
 
    config.xml ファイルを更新する手順について詳しくは、[Document Security 設定ファイルの手動による編集](https://helpx.adobe.com/jp/aem-forms/6-3/admin-help/configuring-client-server-options.html#manually_editing_the_document_security_configuration_file)を参照してください。
 
@@ -178,7 +178,7 @@ Document Security アカウントがない場合、次のイベントが発生�
 登録を済ませてアカウントをアクティベートすると、ポリシーによって使用が承認されていれば、ポリシーで保護されたファイルを使用できるようになります。
 
 >[!NOTE]
-ポリシーで保護されたファイルを受け取っても Document Security アカウントがない場合や、登録の招待を受けていない場合は、ファイルの送信者にお問い合わせください。
+>ポリシーで保護されたファイルを受け取っても Document Security アカウントがない場合や、登録の招待を受けていない場合は、ファイルの送信者にお問い合わせください。
 
 Document Security からメールで登録の招待を受けた場合、そのメールに記載された URL を使用してオンライン登録ページを開いて登録できます。登録後、アカウントのアクティベートに関する通知を受信します。
 
@@ -189,7 +189,7 @@ Document Security からメールで登録の招待を受けた場合、その�
 1. 該当するボックスに、自分の名前、組織およびパスワードを入力します。パスワードには、任意の 8 文字のテキストを使用できます。
 
    >[!NOTE]
-   覚えやすいパスワードを選んでください。パスワードを忘れた場合に確認する方法はありません。
+   >覚えやすいパスワードを選んでください。パスワードを忘れた場合に確認する方法はありません。
 
 1. 「**登録**」をクリックします。メッセージが表示され、アクティベーション用のメールメッセージがユーザーに送信されたことが通知されます。
 1. Document Security 登録確認メールを開きます。
@@ -327,7 +327,7 @@ Document Security Web ページでポリシーの作成に使用できるポリ�
 適用したポリシーは AEM Document Security メニューの「最近使用した項目」リストに追加されるため、頻繁に使用するポリシーを適用しやすくなります。Document Security の複数のインスタンスを使用する場合、「最近使用した項目」リストには、現在接続しているサーバーのポリシーのみが表示されます。または、Document Security のインスタンスにログインしていない場合はデフォルトサーバーのポリシーのみが表示されます。
 
 >[!NOTE]
-ポリシーは、Word ドキュメントファイル（.doc、Microsoft® Office 2010 および 2013 では .docx と .docm）、Excel ワークブックファイル（.xls、Microsoft® Office 2010 および 2013 では .xlsx と .xlsm）および PowerPoint プレゼンテーションファイル（.ppt、Microsoft® Office 2010 および 2013 では .pptx と .pptm）にのみ適用できます。Word テンプレートファイル（.dot）、Excel テンプレートファイル（.xlt）、PowerPoint デザインテンプレートファイル（.pot）にはポリシーを適用できません。
+>ポリシーは、Word ドキュメントファイル（.doc、Microsoft® Office 2010 および 2013 では .docx と .docm）、Excel ワークブックファイル（.xls、Microsoft® Office 2010 および 2013 では .xlsx と .xlsm）および PowerPoint プレゼンテーションファイル（.ppt、Microsoft® Office 2010 および 2013 では .pptx と .pptm）にのみ適用できます。Word テンプレートファイル（.dot）、Excel テンプレートファイル（.xlt）、PowerPoint デザインテンプレートファイル（.pot）にはポリシーを適用できません。
 
 #### ポリシーの適用 {#apply-a-policy}
 
@@ -358,7 +358,7 @@ Microsoft Office® 用 Document Security 拡張機能では、ファイル発行
 ポリシーで保護されたファイルで作業している場合、一部の製品機能が使用できないことや、通常どおり動作しないことがあります。また、保護されていないファイルを開く場合、ほとんどの機能は保護されていないファイルでも有効です。ただし、ポリシーで保護されたファイルに対してコピーまたは書き出しの権限を持っていない場合、そのファイルから内容を読み込んだり、コピーしたりすることはできません。
 
 >[!NOTE]
-Document Security Extension 対応の Office アプリケーションを使用する場合、Windows DEP 設定を無効にすることをお勧めします。また、Document Security Extension がインストールされ、McAfee VirusScan の On-Access Scan 機能が有効なコンピューターで Office アプリケーションをスムーズに起動するには、McAfee VirusScan Console の「Buffer Overflow Protection」オプションを無効にしてください。
+>Document Security Extension 対応の Office アプリケーションを使用する場合、Windows DEP 設定を無効にすることをお勧めします。また、Document Security Extension がインストールされ、McAfee VirusScan の On-Access Scan 機能が有効なコンピューターで Office アプリケーションをスムーズに起動するには、McAfee VirusScan Console の「Buffer Overflow Protection」オプションを無効にしてください。
 
 使用できない機能がある場合、メニューのコマンド名とそれに関連するツールバーボタンは使用できなくなります。Microsoft Office® 用 Document Security 拡張機能では、マウスポインターをコマンドまたはボタンの上に置くと、Document Security によってコマンドが使用不可になっていることがツールヒントに示されます。
 
@@ -385,7 +385,7 @@ Document Security に実装されている認証方法によっては、保護�
    Document Security のログイン情報をまだ指定していない場合は、ユーザー名とパスワードの入力を求めるダイアログボックスが表示されます。
 
 >[!NOTE]
-自分で保護したファイルからポリシーを削除できない場合は、Document Security 管理者に問い合わせてください。
+>自分で保護したファイルからポリシーを削除できない場合は、Document Security 管理者に問い合わせてください。
 
 ### セキュリティ設定の表示 {#viewing-security-settings}
 
@@ -404,7 +404,7 @@ Microsoft Office® 2010 用 Document Security 拡張機能では、「Document S
 ポリシーの自動適用機能が有効になっている場合、 Microsoft® Office 用 Document Security 拡張機能から Document Security サーバーにログインするように求められます。サーバーで認証されるユーザー名とパスワードを入力する必要があります。 正しいログイン資格情報を入力した場合は、ドキュメントは保存され保護されます。
 
 >[!NOTE]
-Document Security にログインできない場合は、ドキュメントが保存されるときと、保存されないときがあります。どちらになるかは、管理者がポリシー自動適用をどのように設定したかによって決まります。この状況でのドキュメントの処理方法については、管理者にお問い合わせください。
+>Document Security にログインできない場合は、ドキュメントが保存されるときと、保存されないときがあります。どちらになるかは、管理者がポリシー自動適用をどのように設定したかによって決まります。この状況でのドキュメントの処理方法については、管理者にお問い合わせください。
 
 ### オフラインアクセスの同期 {#synchronizing-for-offline-access}
 
@@ -542,7 +542,7 @@ Document Security web ページのイベントページが開き、現在のフ�
 コマンドを使用できない場合、メニューのコマンド名や関連するツールバーボタンはグレー表示されます。
 
 >[!NOTE]
-埋め込みファイルへのリンクを含むファイルにポリシーを適用しても、リンク先のファイルにポリシーは適用されません。Microsoft® Office 用 Document Security では、リンク先のファイルにまで保護が拡張されません。
+>埋め込みファイルへのリンクを含むファイルにポリシーを適用しても、リンク先のファイルにポリシーは適用されません。Microsoft® Office 用 Document Security では、リンク先のファイルにまで保護が拡張されません。
 
 * ポリシーで保護された Word、Excel、PowerPoint ファイルは、Internet Explorer ブラウザーウィンドウ内で開くことができません。
 * 変更権限のみを付与されたユーザーは、Windows のクリップボードを使用して、別のアプリケーションの内容をファイルにコピーできません。Microsoft® Office クリップボードオプションを有効にすると、内容をファイルにコピーできます。
