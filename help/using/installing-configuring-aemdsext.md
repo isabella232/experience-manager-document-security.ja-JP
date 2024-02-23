@@ -8,7 +8,7 @@ discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
 source-git-commit: 28137f26afc024d411857d44887bf69fe1ee2b81
 workflow-type: ht
-source-wordcount: '2764'
+source-wordcount: '2775'
 ht-degree: 100%
 
 ---
@@ -55,11 +55,11 @@ AEM Document Security Extension for Microsoft Office は、Microsoft Office ア�
 Document Security Extension のインストールに最低限必要なシステム構成は次のとおりです。
 
 * 32 ビット版または 64 ビット版の Microsoft Windows 7 または Windows 10 英語版、フランス語版、ドイツ語版、日本語版、イタリア語版、スペイン語版、ポルトガル語（ブラジル）版、韓国語版、中国語（簡体字）版または中国語（繁体字）版。
-   **注：** *Document Security Extension for Microsoft Office は Microsoft Surface シリーズのデバイスでも動作すると想定されます。*
+  **注：** *Document Security Extension for Microsoft Office は Microsoft Surface シリーズのデバイスでも動作すると想定されます。*
 
 * 32 ビット版または 64 ビット版の Microsoft Office 2013、2016、2019 および Office 365 の一部としてインストールされたデスクトップ用アプリケーションの英語版、フランス語版、ドイツ語版、日本語版、イタリア語版、スペイン語版、ポルトガル語（ブラジル）版、韓国語版、中国語（簡体字）版または中国語（繁体字）版。
 
-   **メモ**：*AEM Document Security Extension for Microsoft Office は Microsoft Office アプリケーション向けのサードパーティ製プラグインをサポートしていません。この拡張機能はサードパーティプラグインと競合する場合があるため、Document Security Extension for Microsoft Office をインストールする前に、アドビ製以外の Microsoft Office アプリケーション用プラグインをアンインストールする必要があります。サードパーティ製プラグインがインストールされている場合、アドビでは、Document Security Extensions for Microsoft Office アプリケーションのサポートを提供できません。*
+  **メモ**：*AEM Document Security Extension for Microsoft Office は Microsoft Office アプリケーション向けのサードパーティ製プラグインをサポートしていません。この拡張機能はサードパーティプラグインと競合する場合があるため、Document Security Extension for Microsoft Office をインストールする前に、アドビ製以外の Microsoft Office アプリケーション用プラグインをアンインストールする必要があります。サードパーティ製プラグインがインストールされている場合、アドビでは、Document Security Extensions for Microsoft Office アプリケーションのサポートを提供できません。*
 
 * 1.3 GHz 以上のプロセッサー
 * 2 GB の RAM
